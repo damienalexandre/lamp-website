@@ -1,0 +1,211 @@
+
+;----------// Theme Information
+
+  name        = AT Subtheme
+  description = Starter subtheme for Adaptivetheme. Copy this subtheme to get started building your own Drupal theme. For help see our <b><a href="http://adaptivethemes.com/documentation/adaptivethemes-documentation">documentation</a></b> and <b><a href="http://vimeo.com/channels/61157">video tutorials</a></b>. If you have a problem and need additional help please use the <b><a href="http://drupal.org/project/issues/adaptivetheme">issue queue</a></b>.
+  core        = 7.x
+  engine      = phptemplate
+  screenshot  = screenshot.png
+  base theme  = adaptivetheme
+
+
+;----------// Modular stylesheets
+
+  stylesheets[all][] = css/html-elements.css
+  stylesheets[all][] = css/forms.css
+  stylesheets[all][] = css/tables.css
+  stylesheets[all][] = css/fields.css
+  stylesheets[all][] = css/page.css
+  stylesheets[all][] = css/navigation.css
+  stylesheets[all][] = css/articles.css
+  stylesheets[all][] = css/comments.css
+  stylesheets[all][] = css/blocks.css
+  stylesheets[print][] = css/print.css
+
+  ; Disabled styles - un-comment if you need these.
+  ;stylesheets[all][] = css/admin-section.css
+  ;stylesheets[all][] = css/panel-panes.css
+
+  ; Dark stylesheet for building negative or dark designs.
+  ;stylesheets[all][] = css/dark.css
+
+
+;----------// Regions
+
+  regions[sidebar_first]     = Sidebar first
+  regions[sidebar_second]    = Sidebar second
+  regions[content]           = Main Content
+  regions[highlighted]       = Highlighted
+  regions[content_aside]     = Aside
+  regions[secondary_content] = Secondary
+  regions[tertiary_content]  = Tertiary
+  regions[footer]            = Footer
+  regions[leaderboard]       = Leaderboard
+  regions[header]            = Header
+  regions[menu_bar]          = Menu Bar
+  regions[help]              = Help
+  regions[page_top]          = Page top
+  regions[page_bottom]       = Page bottom
+
+
+;----------// Gpanel Regions
+
+  ; 2 col 2x50
+  ;regions[two_50_first]  = 2col 2x50 Gpanel col 1
+  ;regions[two_50_second] = 2col 2x50 Gpanel col 2
+
+  ; 2 col 33-66
+  ;regions[two_33_66_first]  = 2col 33-66 Gpanel col 1
+  ;regions[two_33_66_second] = 2col 33-66 Gpanel col 2
+
+  ; 2 col 66-33
+  ;regions[two_66_33_first]  = 2col 66-33 Gpanel col 1
+  ;regions[two_66_33_second] = 2col 66-33 Gpanel col 2
+
+  ; 3 col 3x33
+  ;regions[three_33_first]  = 3col 3x33 Gpanel col 1
+  ;regions[three_33_second] = 3col 3x33 Gpanel col 2
+  ;regions[three_33_third]  = 3col 3x33 Gpanel col 3
+
+  ; 3 col 25-25-50
+  ;regions[three_25_25_50_first]  = 3col 25-25-50 Gpanel col 1
+  ;regions[three_25_25_50_second] = 3col 25-25-50 Gpanel col 2
+  ;regions[three_25_25_50_third]  = 3col 25-25-50 Gpanel col 3
+
+  ; 3 col 50-25-25
+  ;regions[three_50_25_25_first]  = 3col 50-25-25 Gpanel col 1
+  ;regions[three_50_25_25_second] = 3col 50-25-25 Gpanel col 2
+  ;regions[three_50_25_25_third]  = 3col 50-25-25 Gpanel col 3
+
+  ; 4 col
+  ;regions[four_first]  = 4col Gpanel col 1
+  ;regions[four_second] = 4col Gpanel col 2
+  ;regions[four_third]  = 4col Gpanel col 3
+  ;regions[four_fourth] = 4col Gpanel col 4
+
+  ; 5 col
+  ;regions[five_first]  = 5col Gpanel col 1
+  ;regions[five_second] = 5col Gpanel col 2
+  ;regions[five_third]  = 5col Gpanel col 3
+  ;regions[five_fourth] = 5col Gpanel col 4
+  ;regions[five_fifth]  = 5col Gpanel col 5
+
+  ; 6 col
+  ;regions[six_first]  = 6col Gpanel col 1
+  ;regions[six_second] = 6col Gpanel col 2
+  ;regions[six_third]  = 6col Gpanel col 3
+  ;regions[six_fourth] = 6col Gpanel col 4
+  ;regions[six_fifth]  = 6col Gpanel col 5
+  ;regions[six_sixth]  = 6col Gpanel col 6
+
+
+;----------// Site Features
+  features[] = logo
+  features[] = name
+  features[] = slogan
+  features[] = node_user_picture
+  features[] = comment_user_picture
+  features[] = comment_user_verification
+  features[] = favicon
+  features[] = main_menu
+  features[] = secondary_menu
+
+
+;----------// Theme Settings
+
+  ; Layout settings
+
+  ; Standard bigscreen
+  settings[bigscreen_layout]         = 'three-col-grail'
+  settings[bigscreen_page_unit]      = '%'
+  settings[bigscreen_sidebar_unit]   = '%'
+  settings[bigscreen_max_width_unit] = 'px'
+  settings[bigscreen_page_width]     = 100
+  settings[bigscreen_sidebar_first]  = 25
+  settings[bigscreen_sidebar_second] = 25
+  settings[bigscreen_set_max_width]  = 1
+  settings[bigscreen_max_width]      = 1260
+  settings[bigscreen_media_query]    = 'only screen and (min-width:1025px)'
+
+  ; Tablet landscape
+  settings[tablet_landscape_layout]         = 'three-col-grail'
+  settings[tablet_landscape_page_unit]      = '%'
+  settings[tablet_landscape_sidebar_unit]   = '%'
+  settings[tablet_landscape_max_width_unit] = 'px'
+  settings[tablet_landscape_page_width]     = 100
+  settings[tablet_landscape_sidebar_first]  = 20
+  settings[tablet_landscape_sidebar_second] = 20
+  settings[tablet_landscape_set_max_width]  = 0
+  settings[tablet_landscape_max_width]      = 960
+  settings[tablet_landscape_media_query]    = 'only screen and (min-width:769px) and (max-width:1024px)'
+
+  ; Tablet portrait
+  settings[tablet_portrait_layout]         = 'one-col-vert'
+  settings[tablet_portrait_page_unit]      = '%'
+  settings[tablet_portrait_sidebar_unit]   = '%'
+  settings[tablet_portrait_max_width_unit] = 'px'
+  settings[tablet_portrait_page_width]     = 100
+  settings[tablet_portrait_sidebar_first]  = 50
+  settings[tablet_portrait_sidebar_second] = 50
+  settings[tablet_portrait_set_max_width]  = 0
+  settings[tablet_portrait_max_width]      = 780
+  settings[tablet_portrait_media_query]    = 'only screen and (min-width:481px) and (max-width:768px)'
+
+  ; smartphone landscape
+  settings[smartphone_landscape_layout]         = 'one-col-vert'
+  settings[smartphone_landscape_page_unit]      = '%'
+  settings[smartphone_landscape_sidebar_unit]   = '%'
+  settings[smartphone_landscape_max_width_unit] = 'px'
+  settings[smartphone_landscape_page_width]     = 100
+  settings[smartphone_landscape_sidebar_first]  = 50
+  settings[smartphone_landscape_sidebar_second] = 50
+  settings[smartphone_landscape_set_max_width]  = 0
+  settings[smartphone_landscape_max_width]      = 520
+  settings[smartphone_landscape_media_query]    = 'only screen and (min-width:321px) and (max-width:480px)'
+
+  ; smartphone portrait
+  settings[smartphone_portrait_media_query] = 'only screen and (max-width:320px)'
+
+  ; Breadcrumb
+  settings[breadcrumb_display]   = 'yes'
+  settings[breadcrumb_separator] = ' &#187; '
+  settings[breadcrumb_home]      = 0
+
+  ; Search
+  settings[display_search_form_label] = 1
+  settings[search_snippet]            = 1
+  settings[search_info_type]          = 1
+  settings[search_info_user]          = 1
+  settings[search_info_date]          = 1
+  settings[search_info_comment]       = 1
+  settings[search_info_upload]        = 1
+  settings[search_info_separator]     = ' - '
+
+  ; Login block options
+  settings[horizontal_login_block]        = 0
+  settings[horizontal_login_block_enable] = 'on'
+
+  ; Comments
+  settings[comments_hide_title] = 0
+
+  ; Style settings
+  settings[style_enable_schemes] = 'off'
+  settings[style_schemes]        = 'style-default.css'
+
+  ; Extra CSS classes
+  settings[extra_page_classes]      = 0
+  settings[extra_article_classes]   = 0
+  settings[extra_comment_classes]   = 0
+  settings[extra_block_classes]     = 0
+  settings[extra_menu_classes]      = 0
+  settings[extra_item_list_classes] = 0
+
+  ; Extra markup
+  settings[menu_item_span_elements] = 0
+
+; Information added by drupal.org packaging script on 2012-02-16
+version = "7.x-2.2"
+core = "7.x"
+project = "adaptivetheme"
+datestamp = "1329397237"
+

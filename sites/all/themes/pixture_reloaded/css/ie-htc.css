@@ -1,0 +1,42 @@
+/* Rounded corners for IE6/7/8 */
+ul.primary li a,
+div.item-list ul.pager li,
+.rc-4 .article-teaser,
+.rc-4 .comment,
+.rc-4 .block-inner,
+div.admin-panel,
+.rc-8 .article-teaser,
+.rc-8 .comment,
+.rc-8 .block-inner,    
+.rc-12 .article-teaser,
+.rc-12 .comment,
+.rc-12 .block-inner,
+.rc-4 .block-title,
+.rc-8 .block-title,
+.rc-12 .block-title,
+.view-content .calendar-calendar ul.inline li {
+  /* Uncomment the following line and add make the path to PIE.htc absolute. */
+  /* behavior: url("<-- add your path here -->/sites/all/libraries/PIE/PIE.htc"); */
+}
+
+/* Kill other things PIE might enable that we really don't want */
+.bs-l #page,
+.bs-d #page,
+section.breadcrumb,
+#secondary-content-wrapper .block > .block-inner,
+#breadcrumb-wrapper .block > .block-inner,
+#content-wrapper .block > .block-inner,
+#quadpanel-wrapper .block > .block-inner,
+#tertiary-content-wrapper .block > .block-inner {
+  -webkit-box-shadow:0 0 0 transparent;
+  -moz-box-shadow:0 0 0 transparent;
+  box-shadow:0 0 0 transparent;
+}
+h2.element-invisible,
+.lb-h h2 {
+  position: absolute;
+  top: -99999em;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+}

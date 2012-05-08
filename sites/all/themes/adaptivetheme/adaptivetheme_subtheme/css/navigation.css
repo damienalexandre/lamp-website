@@ -1,0 +1,287 @@
+/* CSS for major navigation elements such as menus, pager, superfish etc */
+
+a {}
+a:link    {}
+a:visited {}
+a:hover   {}
+a:active  {}
+a.active  {}
+
+/* Global focus style for links. */
+a:active,
+a:focus {}
+
+/**
+ * Primary, Seondary and Menu bar menus, use one of the following id's for granular control:
+ * #menu-bar
+ * #primary-menu-bar
+ * #secondary-menu-bar
+ */
+.nav nav {
+  margin: 0 10px;
+}
+.nav {
+  clear:both;
+  margin: 0;
+}
+.nav ul.menu {
+  margin: 0;
+}
+.nav li,
+.nav .menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+}
+.nav li a,
+.nav .menu li a {
+  display: block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+.nav ul,
+.nav ul.menu,
+.nav ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu bar block */
+.nav .block {
+  margin-bottom: 0;
+}
+
+/* Menus */
+ul.menu {
+  margin-left: 15px;
+}
+ul.menu ul,
+ul.menu ul ul,
+ul.menu ul ul ul {
+  margin-left: 15px;
+}
+
+/* Menu li styles */
+ul.menu li {
+  margin: 0;
+}
+ul.menu li.collapsed {}
+ul.menu li.expanded  {}
+ul.menu li.leaf      {}
+
+ul.menu li a:link,
+ul.menu li a:visited {}
+
+ul.menu li a:hover,
+ul.menu li a:focus,
+ul.menu li a:active  {}
+
+ul.menu li.active a  {}
+ul.menu li.active-trail a {}
+
+ul.menu li.first {}
+ul.menu li.last  {}
+
+.block .menu li.content {
+  padding: 0; /* this class can be a problem in some occurances, so mitigate risk */
+}
+
+/* Breadcrumbs - AT7 builds brumbcrumb trails as an ordered list. */
+#breadcrumb {
+  padding-bottom: 1em;
+}
+#breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+#breadcrumb li {
+  list-style: none;
+  display: inline;
+}
+#breadcrumb a {}
+#breadcrumb a:link {}
+#breadcrumb a:visited {}
+#breadcrumb a:hover {}
+#breadcrumb a:focus {}
+#breadcrumb a:active {}
+
+/* Pager */
+ul.pager {
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
+.item-list ul.pager li {
+  margin: 0;
+}
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: .5em;
+}
+ul.pager li.pager-current {
+  font-weight: 700;
+}
+.block ul.pager li {
+  margin: 0;
+}
+
+/* Theme the various states of pager links. */
+ul.pager li a:link    {}
+ul.pager li a:visited {}
+ul.pager li a:hover   {}
+
+/* Note: .pager-current is for the current page. */
+ul.pager li.pager-item     {}
+ul.pager li.first          {}
+ul.pager li.last           {}
+ul.pager li.pager-current  {}
+ul.pager li.pager-first    {}
+ul.pager li.pager-previous {}
+ul.pager li.pager-next     {}
+ul.pager li.pager-last     {}
+
+/* Superfish Skins */
+ul.sf-menu {
+  margin-bottom: 0;
+}
+ul.sf-menu li ul {
+  display: none; /* Prevent momentary display of sub menus */
+}
+ul.sf-menu a {
+  border-left: 0;
+  border-top: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+ul.sf-menu a:link,
+ul.sf-menu a:visited  {}
+
+ul.sf-menu li:hover,
+ul.sf-menu li.sfHover,
+ul.sf-menu a:focus,
+ul.sf-menu a:hover,
+ul.sf-menu a:active {
+  outline: 0;
+}
+
+/* Superfish blocks */
+.block-superfish .block-inner,
+.block-superfish .block-inner .content {
+  padding: 0;
+  margin: 0;
+}
+.block-superfish ul,
+.block-superfish ul ul,
+.block-superfish ul ul ul,
+.block-superfish ul ul ul ul,
+.block-superfish li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Vertical style */
+.sf-vertical,
+.sf-vertical li {
+  width: 100%;
+}
+.sf-vertical li {}
+.sf-vertical li.last {}
+.sf-vertical li:hover ul,
+.sf-vertical li.sfHover ul {
+  left: 100%; /* match ul width */
+  top:  0;
+  margin: 0;
+  padding: 0;
+}
+.sf-vertical li a {
+  padding: 0 10px;
+}
+
+/* Navbar */
+.sf-navbar {
+  padding-bottom: 0 !important;
+}
+
+/* Sensible padding for the default style */
+.sf-menu.sf-style-default a {
+  padding: 0 10px;
+}
+
+/* Skip Navigation */
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+}
+#skip-link a,
+#skip-link a:link,
+#skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  -khtml-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-radius: 0 0 10px 10px;
+}
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  outline: 0;
+}
+
+/* Tabs */
+#tasks {
+  margin-bottom: 1em;
+}
+ul.primary {
+  border-bottom-color:#ccc;
+  margin: 1.5em 0 0;
+  padding: 0 0 .2em .3em;
+}
+ul.primary li a {
+  background-color: #f5f5f5;
+  margin-right: .08em;
+  border-color: #ccc;
+  padding: .1em .75em .2em;
+}
+.local-tasks ul.primary li a:hover {
+  background-color: #f7f7f7;
+  border-color: #ddd;
+}
+.local-tasks ul.primary li.active a {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+ul.secondary {
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 2em 0 0;
+}
+ul.secondary li a:hover,
+ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}

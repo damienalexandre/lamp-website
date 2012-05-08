@@ -1,0 +1,175 @@
+/* Specific overrides for different screen sizes */
+
+/* Smartphone portrait */
+@media only screen and (max-width:320px) {
+  #page {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+  #header {
+    max-height: 1000px;
+    padding: 0;
+    background-image: none;
+  }
+  #branding,
+  .region-header {
+    float: none;
+    max-height: 1000px;
+    width: 100%;
+    clear: both;
+  }
+  .region-header {
+    margin: 10px 0;
+  }
+  #logo {
+    margin: 5px auto;
+    padding: 0;
+    float: none;
+  }
+  #site-name {
+    font-size: 1.4em;
+    padding: 5px 0 0;
+  }
+  #site-slogan {
+    font-size: 1em;
+    text-transform: none;
+  }
+  .region-secondary-content .block {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  #menu-bar {
+    padding: 0 2px;
+  }
+  #menu-bar .menu-wrapper {
+    display: block !important;
+    float: none !important;
+  }
+  #menu-bar .menu-wrapper > ul > li {
+    display: block;
+    float: none;
+    margin: 0;
+    overflow: hidden !important;
+  }
+  #menu-bar .sf-menu {
+    height: auto;
+    padding: 2px 0;
+  }
+  #menu-bar .menu-wrapper ul ul {
+    display: none !important;
+  }
+  #menu-bar, #primary-menu-bar {
+    background-image: none;
+  }
+  .ie6-7 .mbp-c #menu-bar .menu-wrapper  ul,
+  .ie6-7 .mbp-c #menu-bar .menu-wrapper  .sf-menu li {
+    left: auto;
+  }
+}
+
+/* Smartphone landscape */
+@media only screen and (min-width:321px) and (max-width:480px) {
+  #page {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+  #header {
+    max-height: 1000px;
+    padding: 0;
+    background-image: none;
+  }
+  #branding,
+  .region-header {
+    float: none;
+    max-height: 1000px;
+    width: 100%;
+    clear: both;
+  }
+  .region-header {
+    margin: 10px 0;
+  }
+  #site-name {
+    font-size: 1.6em;
+    padding: 25px 0 0;
+  }
+  #site-slogan {
+    font-size: 1em;
+    text-transform: none;
+  }
+  .region-secondary-content .block {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  #menu-bar {
+    padding: 0 2px;
+  }
+  #menu-bar .menu-wrapper {
+    display: block !important;
+    float: none !important;
+  }
+  #menu-bar .menu-wrapper a {
+    display: block;
+    padding: 3px 10px;
+  }
+  #menu-bar .menu-wrapper a:hover,
+  #menu-bar .menu-wrapper a:focus  {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #menu-bar .menu-wrapper > ul > li {
+    display: block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+  }
+  #menu-bar  .menu-wrapper ul,
+  #menu-bar  .menu-wrapper .sf-menu {
+    height: auto;
+    padding: 2px 0;
+  }
+  #menu-bar .menu-wrapper ul ul {
+    display: none !important;
+  }
+  #menu-bar, #primary-menu-bar {
+    background-image: none;
+  }
+  .region-sidebar-first .block,
+  .region-sidebar-second .block {
+    width: 100%;
+  }
+  .ie6-7 .mbp-c #menu-bar .menu-wrapper  ul,
+  .ie6-7 .mbp-c #menu-bar .menu-wrapper  .sf-menu li {
+    left: auto;
+  }
+}
+
+/* Tablet portrait */
+@media only screen and (min-width:481px) and (max-width:768px) {
+  #page {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+  #site-name {
+    font-size: 1.6em;
+    padding: 22px 0 0;
+  }
+  #header {
+    max-height: 1000px;
+    padding: 0;
+    background-image: none;
+  }
+  #branding,
+  .region-header {
+    float: none;
+    max-height: 1000px;
+    width: 100%;
+    clear: both;
+  }
+  #header .header-inner {
+    padding-bottom: 5px;
+  }
+  
+}
+
+/* Tablet landscape */
+/* @media only screen and (min-width:769px) and (max-width:1024px) {} */
+
+/* Standard layout */
+/*@media only screen and (min-width:1025px) {} */

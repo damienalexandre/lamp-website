@@ -1,0 +1,689 @@
+/* Styles to support the theme settings */
+/* Left */
+.hl-l #branding {
+  float: left;
+  margin: 0 20px;
+}
+.hl-l .region-header {
+  float: right;
+  margin: 0 10px;
+}
+.hl-l .region-header .block {
+  display: inline;
+  clear: none;
+  margin-bottom: 0;
+}
+.hl-l #logo {
+  padding: 0 20px 7px 3px;
+}
+/* Right */
+.hl-r #branding {
+  float: right;
+  margin: 0 20px;
+}
+.hl-r .region-header {
+  float: left;
+  margin: 0 10px;
+}
+.hl-r .region-header .block {
+  display: inline;
+  clear: none;
+  margin-bottom: 0;
+}
+.hl-r #logo {
+  padding: 0 3px 7px 20px;
+}
+/* Centered */
+.hl-c #branding {
+  float: none;
+  margin: auto;
+  text-align: center;
+}
+.hl-c .region-header {
+  display: table;
+  float: none;
+  margin: 15px auto 0;
+  text-align: center;
+}
+.hl-c .region-header .block {
+  margin: auto;
+  display: inline;
+  text-align: left;
+  clear: none;
+}
+.hl-c .region-header .block-inner {
+  margin: 0 20px;
+}
+.hl-c #logo {
+  padding: 0 0 10px 0;
+}
+/* Image Alignment */
+.field-type-image {
+  margin: 0;
+  padding: 0;
+}
+.field-type-image img {
+  display: block;
+}
+.ia-l .field-type-image {
+  float: left;
+  clear: left;
+  margin: 4px 15px 0 0;
+}
+.ia-r .field-type-image {
+  float: right;
+  clear: right;
+  margin: 4px 0 0 15px;
+}
+.ia-l .field-type-image,
+.ia-r .field-type-image,
+.ia-c .field-type-image {
+  text-align: center;
+}
+.ia-l .field-type-image  img,
+.ia-r .field-type-image  img,
+.ia-c .field-type-image img {
+  margin: auto;
+}
+.ia-c .field-type-image,
+.ia-n .field-type-image {
+  float: none;
+  clear: both;
+  border: none;
+}
+.ia-c .field-type-image figure,
+.ia-n .field-type-image figure {
+  border: none;
+  padding: 10px 0;
+}
+.ia-n .field-type-image {
+  margin: 0;
+  text-align: left;
+}
+.ia-n .field-type-image figcaption {
+  text-align: left;
+}
+.field-type-image.field-label-above {
+  margin-top: 0;
+}
+.field-type-image .field-label {
+  margin-bottom: 0.5em;
+}
+.field-type-image.field-label-inline .field-label {
+  margin-bottom: 0;
+  line-height: 1;
+}
+/* Override image alignment with short codes,
+   its takes a lot to override the theme settings for image alignment */
+body .image-left,
+body div.image-left,
+body div.image-left .field-type-image {
+  float: left;
+  margin: 4px 15px 0 0;
+  text-align: left;
+}
+body .image-left img,
+body div.image-left img,
+body div.image-left .field-type-image img {
+  text-align: left;
+  margin: 0;
+}
+body .image-right,
+body div.image-right,
+body div.image-right .field-type-image {
+  float: right;
+  margin: 4px 0 0 15px;
+  text-align: right;
+}
+body .image-right img,
+body div.image-right img,
+body div.image-right .field-type-image img {
+  text-align: right;
+  margin: 0;
+}
+body .image-center,
+body .image-center img,
+body div.image-center,
+body div.image-center .field-type-image {
+  text-align: center;
+}
+body .image-center,
+body div.image-center,
+body div.image-center .field-type-image img{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Reset node from image fields */
+form.node-form div.field-type-image,
+form.node-form div.field-type-image img {
+  text-align: left !important;
+}
+form.node-form div.field-type-image img {
+  display: inline !important;
+  margin: 0 !important;
+}
+/* Font-Family Presets */
+/* sans-serif small */
+body.bf-sss,
+.bf-sss .form-text,
+.snf-sss #site-name,
+.ssf-sss #site-slogan,
+.ptf-sss #page-title,
+.ntf-sss .article-title,
+.ctf-sss .comment-title,
+.btf-sss .block-title {
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+/* sans-serif large */
+body.bf-ssl,
+.bf-ssl .form-text,
+.snf-ssl #site-name,
+.ssf-ssl #site-slogan,
+.ptf-ssl #page-title,
+.ntf-ssl .article-title,
+.ctf-ssl .comment-title,
+.btf-ssl .block-title {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+/* sans-serif arial/helvitica */
+body.bf-a,
+.bf-a .form-text,
+.snf-a #site-name,
+.ssf-a #site-slogan,
+.ptf-a #page-title,
+.ntf-a .article-title,
+.ctf-a .comment-title,
+.btf-a .block-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* calibri and candara windows fonts */
+body.bf-cc,
+.bf-cc .form-text,
+.snf-cc #site-name,
+.ssf-cc #site-slogan,
+.ptf-cc #page-title,
+.ntf-cc .article-title,
+.ctf-cc .comment-title,
+.btf-cc .block-title {
+  font-family: Calibri, Candara, Arial, Helvetica, sans-serif;
+}
+/* serif small */
+body.bf-ss,
+.bf-ss .form-text,
+.snf-ss #site-name,
+.ssf-ss #site-slogan,
+.ptf-ss #page-title,
+.ntf-ss .article-title,
+.ctf-ss .comment-title,
+.btf-ss .block-title {
+  font-family: Garamond, Perpetua, "Times New Roman", serif;
+}
+/* serif large */
+body.bf-sl,
+.bf-sl .form-text,
+.snf-sl #site-name,
+.ssf-sl #site-slogan,
+.ptf-sl #page-title,
+.ntf-sl .article-title,
+.ctf-sl .comment-title,
+.btf-sl .block-title {
+  font-family: Georgia, Baskerville, Palatino, "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+}
+/* Modern/Myriad */
+body.bf-m,
+.bf-m .form-text,
+.snf-m #site-name,
+.ssf-m #site-slogan,
+.ptf-m #page-title,
+.ntf-m .article-title,
+.ctf-m .comment-title,
+.btf-m .block-title {
+  font-family: "Segoe UI", "Myriad Pro", Myriad, Arial, Helvetica, sans-serif;
+}
+/* Lucida */
+body.bf-l,
+.bf-l .form-text,
+.snf-l #site-name,
+.ssf-l #site-slogan,
+.ptf-l #page-title,
+.ntf-l .article-title,
+.ctf-l .comment-title,
+.btf-l .block-title {
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Verdana, Geneva, sans-serif;
+}
+/* mono */
+body.bf-ms,
+.bf-ms .form-text,
+.snf-ms #site-name,
+.ssf-ms #site-slogan,
+.ptf-ms #page-title,
+.ntf-ms .article-title,
+.ctf-ms .comment-title,
+.btf-ms .block-title {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+}
+/* Base fontsize */
+.fs-smallest {font-size: 0.833em;}
+.fs-small {font-size: 0.917em;}
+.fs-medium {font-size: 1em;}
+.fs-large {font-size: 1.083em;}
+.fs-largest {font-size: 1.167em;}
+
+/* Heading styles */
+.hs-caps h1,
+.hs-caps h2,
+.hs-caps h3,
+.hs-caps h4,
+.hs-caps h5,
+.hs-caps h6 {
+  text-transform: uppercase;
+}
+.hs-fwn h1,
+.hs-fwn h2,
+.hs-fwn h3,
+.hs-fwn h4,
+.hs-fwn h5,
+.hs-fwn h6 {
+  font-weight: 400;
+}
+.hs-ts .block-title {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+/* Title case */
+.ptc-n #page-title,
+.ntc-n .article-title,
+.ctc-n .comment-title,
+.btc-n .block-title {
+  text-transform: none;
+}
+.ptc-uc #page-title,
+.ntc-uc .article-title,
+.ctc-uc .comment-title,
+.btc-uc .block-title {
+  text-transform: uppercase;
+}
+.ptc-lc #page-title,
+.ntc-lc .article-title,
+.ctc-lc .comment-title,
+.btc-lc .block-title {
+  text-transform: lowercase;
+}
+.ptc-c #page-title,
+.ntc-c .article-title,
+.ctc-c .comment-title,
+.btc-c .block-title {
+  text-transform: capitalize;
+}
+.ptc-sc #page-title,
+.ntc-sc .article-title,
+.ctc-sc .comment-title,
+.btc-sc .block-title {
+  text-transform: none;
+  font-variant: small-caps;
+}
+/* Title weight */
+.ptw-n #page-title,
+.ntw-n .article-title,
+.ctw-n .comment-title,
+.btw-n .block-title {
+  font-weight: 400;
+}
+.ptw-b #page-title,
+.ntw-b .article-title,
+.ctw-b .comment-title,
+.btw-b .block-title {
+  font-weight: 700;
+}
+/* Title alignments */
+.pta-l #page-title,
+.nta-l .article-title,
+.cta-l .comment-title,
+.bta-l .block-title {
+  text-align: left;
+}
+.pta-r #page-title,
+.nta-r .article-title,
+.cta-r .comment-title,
+.bta-r .block-title{
+  text-align: right;
+}
+.pta-c #page-title,
+.nta-c .article-title,
+.cta-c .comment-title,
+.bta-c .block-title{
+  text-align: center;
+}
+/* Title shadows */
+.pts-l #page-title,
+.nts-l .article-title,
+.cts-l .comment-title,
+.bts-l .block-title{
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.pts-d #page-title,
+.nts-d .article-title,
+.cts-d .comment-title,
+.bts-d .block-title{
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+.pts-w #page-title,
+.nts-w .article-title,
+.cts-w .comment-title,
+.bts-w .block-title{
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+}
+/* Background overlays */
+.bb-n .texture-overlay {
+  background-image: none;
+}
+.bb-h .texture-overlay {
+  background-image: url(../images/ts/hatch.png);
+}
+.bb-vl .texture-overlay {
+  background-image: url(../images/ts/line-vert.png);
+}
+.bb-hl .texture-overlay {
+  background-image: url(../images/ts/line-horiz.png);
+}
+.bb-g .texture-overlay {
+  background-image: url(../images/ts/grid.png);
+}
+.bb-d .texture-overlay {
+  background-image: url(../images/ts/dots.png);
+}
+/* Box shadows */
+.sc-n #page  {
+  -webkit-box-shadow:0 0 0 transparent;
+  -moz-box-shadow:0 0 0 transparent;
+  box-shadow:0 0 0 transparent;
+}
+.bs-l #page {
+  -webkit-box-shadow:0 0 10px rgba(76, 76, 76, 0.7);
+  -moz-box-shadow:0 0 10px rgba(76, 76, 76, 0.7);
+  box-shadow:0 0 10px rgba(76, 76, 76, 0.7);
+}
+.bs-d #page  {
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
+}
+/* Bullets */
+.mb-n ul.menu {
+  padding: 0;
+}
+.mb-n ul li.leaf,
+.mb-n ul li.collapsed,
+.mb-n ul li.expanded {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+}
+.mb-ah ul li.leaf,
+.mb-ah ul li.collapsed,
+.mb-ah ul li.expanded {
+  list-style-image: url(../images/ts/arrow-head.png);
+}
+.mb-ad ul.menu {
+  padding: 0 0 0 0.4em;
+}
+.mb-ad ul li.leaf,
+.mb-ad ul li.collapsed,
+.mb-ad ul li.expanded {
+  list-style-image: url(../images/ts/arrow-double.png);
+}
+.mb-ca ul.menu {
+  padding: 0 0 0 1.2em;
+}
+.mb-ca ul li.leaf,
+.mb-ca ul li.collapsed,
+.mb-ca ul li.expanded {
+  list-style-image: url(../images/ts/arrow-circle.png);
+}
+.mb-fa ul.menu {
+  padding: 0 0 0 1.2em;
+}
+.mb-fa ul li.leaf,
+.mb-fa ul li.collapsed,
+.mb-fa ul li.expanded {
+  list-style-image: url(../images/ts/arrow-fat.png);
+}
+.mb-sa ul.menu {
+  padding: 0 0 0 1.2em;
+}
+.mb-sa ul li.leaf,
+.mb-sa ul li.collapsed,
+.mb-sa ul li.expanded {
+  list-style-image: url(../images/ts/arrow-skinny.png);
+}
+/* Login block - horizontal (theme setting) basic styles */
+.lb-h {
+  min-width: 320px;
+  margin-top: 1px;
+}
+.ie6-8.lb-h {
+  min-width: 340px;
+}
+.lb-h .region-header {
+  float: right;
+  margin: 35px 0 0;
+}
+.lb-h .block-inner,
+.lb-h .block-content {
+  background: none;
+  padding: 0;
+}
+.lb-h #user-login-form {
+  margin: 0;
+}
+.lb-h #user-login-form label {
+  line-height: 1.2
+}
+.lb-h .form-item {
+  float:left;
+  margin: 0;
+}
+.lb-h input.form-text {
+  margin:0 3px 0 0;
+  width:110px;
+}
+.ie8 .lb-h input.form-text {
+  margin-right: 5px;
+  width: 90px;
+}
+.lb-h div.form-actions {
+  margin: 0;
+  float: left;
+}
+.lb-h input.form-submit {
+  position: absolute;
+  margin: 0;
+  top: 1.2em;
+}
+.ie8 .lb-h input.form-submit {
+  margin-left: 10px;
+  width: 70px;
+}
+.lb-h .form-required,
+.lb-h .item-list {
+  display: none;
+}
+.lb-h h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* Rounded corners */
+ul.primary li a,
+div.item-list ul.pager li {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+
+input.form-submit,
+input.form-text,
+.rc-4 .article-teaser,
+.rc-4 .comment,
+.rc-4 .block-inner {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+div.admin-panel,
+.rc-8 .article-teaser,
+.rc-8 .comment,
+.rc-8 .block-inner {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+.rc-12 .article-teaser,
+.rc-12 .comment,
+.rc-12 .block-inner {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+}
+.rc-4 .block-title {
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -khtml-border-radius-topleft: 4px;
+  -khtml-border-radius-topright: 4px;
+  -khtml-border-radius-bottomright: 0;
+  -khtml-border-radius-bottomleft: 0;
+  border-radius: 4px 4px 0 0;
+}
+.rc-8 .block-title {
+  -moz-border-radius: 8px 8px 0 0;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -khtml-border-radius-topleft: 8px;
+  -khtml-border-radius-topright: 8px;
+  -khtml-border-radius-bottomright: 0;
+  -khtml-border-radius-bottomleft: 0;
+  border-radius: 8px 8px 0 0;
+}
+.rc-12 .block-title {
+  -moz-border-radius: 12px 12px 0 0;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -khtml-border-radius-topleft: 12px;
+  -khtml-border-radius-topright: 12px;
+  -khtml-border-radius-bottomright: 0;
+  -khtml-border-radius-bottomleft: 0;
+  border-radius: 12px 12px 0 0;
+}
+/* Date/Calendar */
+.calendar-calendar div.date-nav {
+  border: 0;
+  padding: 1px;
+}
+.calendar-calendar td {
+  text-align: center;
+}
+.calendar-calendar th.days {
+  border: 0;
+}
+.calendar-calendar td.calendar-agenda-hour {
+  border-style: solid none none;
+}
+.calendar-calendar td.calendar-agenda-items {
+  border-style: solid;
+}
+.calendar-calendar td.calendar-agenda-hour {
+  border-style: none none solid solid;
+  border-width: 1px;
+}
+.calendar-calendar td.calendar-agenda-hour .calendar-hour {
+  padding: 0 5px;
+  white-space: nowrap;
+}
+.calendar-calendar div.calendar {
+  font-size: 1em;
+}
+.calendar-calendar td .inner div.calendar div {
+  background: #eee;
+  border: 0;
+  padding: 0 5px;
+}
+.calendar-calendar td .inner div.calendar div a {
+  padding: 0;
+  background: #eee;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.calendar-calendar td .inner div,
+.calendar-calendar td .inner div a {
+  border-bottom: 1px solid #fff;
+}
+.view-content .calendar-calendar ul.inline {
+  padding: 0 0 10px;
+  display: block;
+}
+.view-content .calendar-calendar ul.inline li {
+  margin-right: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* Noggin header image extra settings */
+body.ni-a-tl #header .header-inner {background-position: top left;}
+body.ni-a-tr #header .header-inner {background-position: top right;}
+body.ni-a-tc #header .header-inner {background-position: top center;}
+body.ni-a-ml #header .header-inner {background-position: center left;}
+body.ni-a-mr #header .header-inner {background-position: center right;}
+body.ni-a-mc #header .header-inner {background-position: center center;}
+body.ni-a-bl #header .header-inner {background-position: bottom left;}
+body.ni-a-br #header .header-inner {background-position: bottom center;}
+body.ni-a-bc #header .header-inner {background-position: bottom right;}
+body.ni-r-r   #header .header-inner {background-repeat: repeat;}
+body.ni-r-rx #header .header-inner {background-repeat: repeat-x;}
+body.ni-r-ry #header .header-inner {background-repeat: repeat-y;}
+body.ni-r-nr #header .header-inner {background-repeat: no-repeat;}
+body.ni-w-ftw #header .header-inner {
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -khtml-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+  background-origin: border-box;
+}
+
+/* Main menu position - left is default */
+/* Center */
+.mbp-c #menu-bar .menu-wrapper {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+.mbp-c #menu-bar .menu-wrapper ul {
+  text-align: left;
+}
+/* IE6/7 */
+.ie6-7 .mbp-c #menu-bar .menu-wrapper  ul {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.ie6-7 .mbp-c #menu-bar .menu-wrapper  .sf-menu ul li {
+	left: 0;
+}
+.ie6-7 .mbp-c #menu-bar .menu-wrapper  .sf-menu li {
+	left: -50%;
+}
+/* Right */
+.mbp-r #menu-bar .menu-wrapper {
+  float: right;
+}

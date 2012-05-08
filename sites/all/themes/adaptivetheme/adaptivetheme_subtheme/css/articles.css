@@ -1,0 +1,58 @@
+/* Articles (nodes) */
+.article {
+  margin-bottom: 20px;
+}
+
+.article > header {}
+
+/* Title */
+.article-title {}
+.article-title a:link,
+.article-title a:visited,
+.article-title a:active {}
+
+.article-title a:hover,
+.article-title a:focus {}
+
+/* User Picture */
+.article .user-picture {}
+.article .user-picture img {}
+
+/* Submitted */
+.article .submitted {}
+.article .submitted  a {}
+.article .submitted  a:hover {}
+.article .submitted  p.author-datetime {}
+.article .submitted  time {}
+
+/* Links */
+.article nav {}
+.article ul.links {}
+.article ul.links li {}
+.article ul.links li a {}
+.article ul.links li.node_read_more a {}
+.article ul.links li.comment_add a {}
+.article ul.links li.comment_comments a {}
+.article ul.links li.comment_new_comments a {}
+.article ul.links li.blog_usernames_blog a {}
+.article ul.links li.print_html a {}
+.article ul.links li.print_email a {}
+.article ul.links li.print_pdf a {}
+
+/* UL link first and last classes */
+.article ul.links li.first {}
+.article ul.links li.last  {}
+
+/* Workflow states */
+.article-add    {}
+.article-edit   {}
+.article-delete {}
+.article-preview  {}
+.article-sticky   {}
+.article-promoted {}
+
+/* Status */
+.article-unpublished {}
+
+/* Theme the teaser */
+.article-teaser {}

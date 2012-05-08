@@ -1,0 +1,90 @@
+/* Comments */
+
+/* Comment wrapper wraps all comments and the comment form. */
+#comments {}
+#comments h2.title {
+  margin-bottom: .5em;
+}
+
+/* Wrapper class for each individual comment. */
+.comment {
+  margin-bottom: 20px;
+}
+
+/* Indentation */
+.comment .indented {
+  margin-left: 60px;
+}
+
+/* Comment Title */
+.comment-title {}
+.comment-title a:link,
+.comment-title a:visited,
+.comment-title a:active {}
+
+.comment-title a:hover,
+.comment-title a:focus {}
+
+/* Comment "new" notification */
+.comment-title .new {
+  color: #ff8000;
+}
+
+/* User Picture */
+.comment .user-picture {}
+.comment .user-picture img {}
+
+/* Submitted */
+.comment > footer {}
+.comment > footer em {}
+.comment > footer a {}
+.comment > footer a:hover {}
+.comment > footer .username {}
+.comment > footer time {}
+
+/* Links */
+.comment ul.links {
+  display: block;
+  text-align: right;
+  padding: 0;
+  margin: 10px 0;
+}
+.comment ul.links li {
+  padding: 0 0 0 10px;
+}
+.comment ul.links li a {}
+
+/* Core comment link classes. */
+ul.links li.comment_reply a {}
+ul.links li.comment_edit a {}
+ul.links li.comment_delete a {}
+
+/* UL link first and last classes. */
+.comment ul.links li.first {}
+.comment ul.links li.last  {}
+
+/* Author */
+.comment-by-anonymous   {}
+.comment-by-article-author {}
+.comment-by-viewer      {}
+
+/* New */
+.comment-new {}
+
+/* Zebra */
+.comment-odd  {}
+.comment-even {}
+
+/* Status */
+.comment-unpublished {}
+
+/* Themes the "Unpublished" text. */
+.comment-unpublished .unpublished {}
+
+/* Sytle comments by article type. */
+.book-comments    {}
+.blog-comments    {}
+.forum-comments   {}
+.page-comments    {}
+.poll-comments    {}
+.article-comments {}

@@ -1,0 +1,197 @@
+/* Theme Settings CSS
+   This is crafted to work with Seven and AT Admin themes,
+   other admin themes could spit the dummy with these styles. */
+div.vertical-tabs .vertical-tabs-panes {
+  min-height: 300px;
+}
+.vertical-tabs-panes .form-item {
+  clear: both;
+}
+.vertical-tabs-panes label {
+  font-weight: 400;
+  margin: 0 0 5px;
+  display: inline-block;
+}
+.vertical-tabs-panes select {
+  width: auto;
+}
+#edit-font label {
+  width: 10em;
+}
+#edit-font select {
+  width: auto;
+}
+#edit-font .form-wrapper select {
+  width: auto;
+}
+#edit-font #edit-font-size {
+  width: auto;
+}
+#edit-breadcrumb select#edit-breadcrumb-display,
+#edit-breadcrumb input#edit-breadcrumb-separator {
+  width: auto;
+}
+#edit-pagestyles fieldset p {
+  margin-bottom: 0;
+}
+.vertical-tabs-panes .form-type-checkbox label,
+.vertical-tabs-panes .form-type-radios label {
+  float: none;
+  width: auto;
+}
+.vertical-tabs-panes fieldset fieldset {
+  background: #f7f7f7;
+  border: 0;
+  margin: 1px 0;
+}
+.vertical-tabs-panes fieldset fieldset .fieldset-wrapper {
+  padding-top: 10px;
+}
+.vertical-tabs-panes fieldset fieldset .fieldset-wrapper .fieldset-description {
+  padding-bottom: 5px;
+}
+fieldset.at-layout-form div.form-item  label[for*="-media-query"] {
+  padding-bottom: 10px;
+}
+fieldset.at-layout-form div.form-item[class*="-media-query"] .description {
+  padding-top: 3px;
+}
+.vertical-tabs .form-type-textfield input {
+  width: auto;
+}
+/* Layout settings */
+.at-layout-form div.form-item {
+  float: left;
+  margin-right: 25px;
+  clear: none;
+}
+fieldset.at-layout-form div.form-item  label,
+fieldset.at-layout-form div.form-type-checkbox {
+  float: none;
+  width: auto;
+}
+fieldset.at-layout-form div.form-item input {
+  width: 8em;
+}
+fieldset.at-layout-form select {
+  width: 4em;
+}
+
+fieldset.at-layout-form div.form-type-checkbox label,
+fieldset.at-media-queries div.form-type-textfield label {
+  font-weight: 700;
+}
+fieldset.at-media-queries div.form-item {
+  margin-right: 0;
+}
+fieldset.at-media-queries div.form-item,
+fieldset.at-media-queries div.form-type-textfield input {
+  width: 90%;
+}
+h4 {
+  margin-bottom: 0;
+}
+fieldset.at-layout-form div.form-type-radio {
+  clear: none;
+  float: left;
+  margin: 0 30px 10px 0;
+  text-align: center;
+  width: 80px;
+}
+fieldset.at-layout-form div.form-type-radio input,
+fieldset.at-layout-form div[class*="set-max-width"] input  {
+  width: auto;
+}
+fieldset.at-layout-form div.form-type-radio label,
+div.smartphone-portrait-layout  {
+  background: url(images/layouts.png);
+  background-repeat: no-repeat;
+  margin-top: 4px;
+  height: 80px;
+  width: 80px;
+  text-indent: -99999em;
+  overflow: hidden;
+  display: block;
+  float: none;
+  text-align: center;
+}
+#edit-bigscreen-layout-wrapper .form-type-radio label[for=edit-bigscreen-layout-three-col-grail],
+#edit-tablet-landscape-layout-wrapper .form-type-radio  label[for=edit-tablet-landscape-layout-three-col-grail]  {
+  background-position: 0 0;
+}
+#edit-bigscreen-layout-wrapper .form-type-radio label[for=edit-bigscreen-layout-three-col-right],
+#edit-tablet-landscape-layout-wrapper .form-type-radio  label[for=edit-tablet-landscape-layout-three-col-right]  {
+  background-position: 0 -80px;
+}
+#edit-bigscreen-layout-wrapper .form-type-radio label[for=edit-bigscreen-layout-three-col-left],
+#edit-tablet-landscape-layout-wrapper .form-type-radio  label[for=edit-tablet-landscape-layout-three-col-left]  {
+  background-position: 0 -160px;
+}
+#edit-tablet-landscape-layout-wrapper .form-type-radio  label[for=edit-tablet-landscape-layout-two-col-stack],
+#edit-tablet-portrait-layout-wrapper .form-type-radio  label[for=edit-tablet-portrait-layout-two-col-stack]  {
+  background-position: 0 -240px;
+}
+#edit-tablet-portrait-layout-wrapper .form-type-radio  label[for=edit-tablet-portrait-layout-one-col-vert],
+#edit-smartphone-landscape-layout-wrapper .form-type-radio label[for=edit-smartphone-landscape-layout-one-col-vert]  {
+  background-position: 0 -320px;
+}
+#edit-tablet-portrait-layout-wrapper .form-type-radio  label[for=edit-tablet-portrait-layout-one-col-stack],
+#edit-smartphone-landscape-layout-wrapper .form-type-radio label[for=edit-smartphone-landscape-layout-one-col-stack],
+div.smartphone-portrait-layout  {
+  background-position: 0 -400px;
+}
+div.smartphone-portrait-layout  {
+  float: left;
+  margin: 15px 15px 0 0;
+}
+fieldset#edit-portrait--2  .fieldset-description {
+  overflow: hidden;
+}
+fieldset#edit-landscape,
+fieldset#edit-landscape--2,
+fieldset#edit-portrait,
+fieldset#edit-portrait--2 {
+  border: 0;
+  background: none;
+}
+fieldset#edit-landscape > .fieldset-wrapper,
+fieldset#edit-landscape--2 > .fieldset-wrapper,
+fieldset#edit-portrait > .fieldset-wrapper,
+fieldset#edit-portrait--2 > .fieldset-wrapper {
+  padding: 0;
+}
+.vertical-tabs-panes #edit-media-queries  label {
+  width: 13em;
+}
+#edit-media-queries .form-type-checkbox label {
+  font-weight: 700;
+}
+#edit-debug p.warning {
+  background: url(images/warning.png) no-repeat left center;
+  padding-left: 25px;
+}
+
+/* Fonts */
+fieldset#edit-font .fieldset-wrapper legend {
+  display: block;
+  padding-top: 10px;
+}
+fieldset#edit-font .fieldset-wrapper .fieldset-wrapper {
+    padding-top: 35px;
+}
+
+/* Heading styles for advanced themes */
+#edit-headings .form-type-radios {
+  width: 12em;
+  float: left;
+  clear: none;
+}
+
+/* Give some real definition to disabled selects */
+select[disabled],
+fieldset[disabled] select,
+input[disabled] {
+  background: #fafafa;
+  border-color: #ccc;
+  color: #fafafa;
+}

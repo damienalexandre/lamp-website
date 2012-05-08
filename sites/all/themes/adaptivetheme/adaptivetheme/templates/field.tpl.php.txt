@@ -1,0 +1,19 @@
+/**
+ * This is a copy of cores field.tpl.php modified to support HTML5 and use
+ * h2 for the label. This file is not used by default by Adaptivetheme which
+ * is why this is a text file - its here to serve as an example to use if you
+ * want to override field templates using suggestions. Instead Adaptivetheme
+ * overrides theme_field() beacuse functions are 5 times faster than templates.
+ * @see adaptivetheme_field()
+ */
+<?php $tag = $label_hidden ? 'div' : 'section'; ?>
+<<?php print $tag; ?> class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php if (!$label_hidden) : ?>
+    <h2 class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</h2>
+  <?php endif; ?>
+  <div class="field-items"<?php print $content_attributes; ?>>
+    <?php foreach ($items as $delta => $item) : ?>
+      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
+    <?php endforeach; ?>
+  </div>
+</<?php print $tag; ?>>

@@ -1,0 +1,130 @@
+
+;----------// Theme Information
+  name        = AT Admin
+  description = A better admin theme for Drupal 7. Clean, calm, invisible. Includes left and right sidebars, Overlay support and settings for font family and font size.
+  core        = 7.x
+  engine      = phptemplate
+  screenshot  = screenshot.png
+  base theme  = adaptivetheme
+
+;----------// Stylesheets
+  stylesheets[all][] = css/at_admin.css
+
+;----------// Regions
+
+  regions[content]        = Main content
+  regions[sidebar_first]  = Sidebar first
+  regions[sidebar_second] = Sidebar second
+  regions[highlighted]    = Highlighted
+  regions[help]           = Help
+  regions[footer]         = Footer
+  regions[page_top]       = Page top
+  regions[page_bottom]    = Page bottom
+
+;----------// Shortcut link
+  settings[shortcut_module_link] = 1
+
+;----------// Features
+  features[] = logo
+  features[] = name
+  features[] = favicon
+  features[] = main_menu
+  features[] = secondary_menu
+
+;----------// Theme Setting Defaults
+
+  ; Standard bigscreen
+  settings[bigscreen_layout]         = 'three-col-right'
+  settings[bigscreen_page_unit]      = '%'
+  settings[bigscreen_sidebar_unit]   = 'px'
+  settings[bigscreen_max_width_unit] = 'px'
+  settings[bigscreen_page_width]     = 100
+  settings[bigscreen_sidebar_first]  = 200
+  settings[bigscreen_sidebar_second] = 160
+  settings[bigscreen_set_max_width]  = 1
+  settings[bigscreen_max_width]      = 1260
+  settings[bigscreen_media_query]    = 'only screen and (min-width:1025px)'
+
+  ; Tablet landscape
+  settings[tablet_landscape_layout]         = 'three-col-right'
+  settings[tablet_landscape_page_unit]      = '%'
+  settings[tablet_landscape_sidebar_unit]   = '%'
+  settings[tablet_landscape_max_width_unit] = 'px'
+  settings[tablet_landscape_page_width]     = 100
+  settings[tablet_landscape_sidebar_first]  = 20
+  settings[tablet_landscape_sidebar_second] = 15
+  settings[tablet_landscape_set_max_width]  = 0
+  settings[tablet_landscape_max_width]      = 960
+  settings[tablet_landscape_media_query]    = 'only screen and (min-width:769px) and (max-width:1024px)'
+
+  ; Tablet portrait
+  settings[tablet_portrait_layout]         = 'one-col-stack'
+  settings[tablet_portrait_page_unit]      = '%'
+  settings[tablet_portrait_sidebar_unit]   = '%'
+  settings[tablet_portrait_max_width_unit] = 'px'
+  settings[tablet_portrait_page_width]     = 100
+  settings[tablet_portrait_sidebar_first]  = 50
+  settings[tablet_portrait_sidebar_second] = 50
+  settings[tablet_portrait_set_max_width]  = 0
+  settings[tablet_portrait_max_width]      = 780
+  settings[tablet_portrait_media_query]    = 'only screen and (min-width:481px) and (max-width:768px)'
+
+  ; smartphone landscape
+  settings[smartphone_landscape_layout]         = 'one-col-stack'
+  settings[smartphone_landscape_page_unit]      = '%'
+  settings[smartphone_landscape_sidebar_unit]   = '%'
+  settings[smartphone_landscape_max_width_unit] = 'px'
+  settings[smartphone_landscape_page_width]     = 100
+  settings[smartphone_landscape_sidebar_first]  = 50
+  settings[smartphone_landscape_sidebar_second] = 50
+  settings[smartphone_landscape_set_max_width]  = 0
+  settings[smartphone_landscape_max_width]      = 520
+  settings[smartphone_landscape_media_query]    = 'only screen and (min-width:321px) and (max-width:480px)'
+
+  ; smartphone portrait
+  settings[smartphone_portrait_media_query] = 'only screen and (max-width:320px)'
+
+  ; Breadcrumb
+  settings[breadcrumb_display]   = 'yes'
+  settings[breadcrumb_separator] = ' &#187; '
+  settings[breadcrumb_home]      = 1
+
+  ; Search
+  settings[display_search_form_label] = 1
+  settings[search_snippet]            = 1
+  settings[search_info_type]          = 1
+  settings[search_info_user]          = 1
+  settings[search_info_date]          = 1
+  settings[search_info_comment]       = 1
+  settings[search_info_upload]        = 1
+  settings[search_info_separator]     = ' - '
+
+  ; Login block options
+  settings[horizontal_login_block]        = 0
+  settings[horizontal_login_block_enable] = 'on'
+
+  ; Style settings
+  settings[style_enable_schemes] = 'off'
+  settings[style_schemes]        = 'style-default.css'
+
+  ; Extra CSS classes
+  settings[extra_page_classes]      = 1
+  settings[extra_article_classes]   = 1
+  settings[extra_comment_classes]   = 1
+  settings[extra_block_classes]     = 1
+  settings[extra_menu_classes]      = 1
+  settings[extra_item_list_classes] = 1
+
+  ; Extra markup
+  settings[menu_item_span_elements] = 0
+
+  ; Fonts
+  settings[font_family] = 'ff-l'
+  settings[font_size]   = 'fs-medium'
+
+; Information added by drupal.org packaging script on 2012-02-16
+version = "7.x-2.2"
+core = "7.x"
+project = "adaptivetheme"
+datestamp = "1329397237"
+

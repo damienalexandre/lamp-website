@@ -1,0 +1,497 @@
+/**
+ * This stylesheet provides dark style overrides to
+ * support dark themes for Drupal.
+
+ * by MattRock [http://mattrock.net/]
+ * made major color changes based upon Ethan Schoonover's
+ * Solarized palette [http://ethanschoonover.com/solarized]
+ * Note that Solarized is fantastic with light backgrounds as well
+ *
+ * Dark Background Tones
+ * base03:    #002b36
+ * base02:    #073642
+ *
+ * Content Tones
+ * base01:    #586e75
+ * base00:    #657b83
+ * base0:     #839496
+ * base1:     #93a1a1
+ *
+ * Light Background Tones
+ * base2:     #eee8d5
+ * base3:     #fdf6e3
+ *
+ * Accent Colors
+ * yellow:    #b58900
+ * orange:    #cb4b16
+ * red:       #dc322f
+ * magenta:   #d33682
+ * violet:    #6c71c4
+ * blue:      #268bd2
+ * cyan:      #2aa198
+ * green:     #859900
+ *
+ */
+
+body {
+  background:#fff;
+  background:#fdf6e3;
+  background:#eee8d5;
+  background:#002b36;
+  background:#073642;
+  background:#000;
+  color:#839496;
+}
+a {
+  margin:0;
+  padding:0;
+}
+a:focus {
+  color:#657b83;
+  border:0;
+}
+a:hover,
+div.error a:hover,
+div.error a:focus,
+div.status a:hover,
+div.status a:focus,
+div.help a:hover,
+div.help a:focus,
+div.warning a:hover,
+div.warning a:focus,
+tr.warning a:hover,
+tr.warning a:focus,
+table tr.warning.merge-up td,
+.hilited a.hilite,
+.views-display-default a:hover,
+.views-display-default a:active,
+.views-display-default a.active {
+  color:#586e75;
+}
+li a.active,
+table.system-status-report a:hover,
+table.system-status-report a:focus,
+table.update a:hover,
+table.update a:focus {
+  color:#657b83;
+  text-decoration:underline;
+}
+a:link,
+a:visited,
+.views-tabset a:visited,
+.views-tabset a:hover,
+.views-tabset a {
+  color:#93a1a1;
+}
+thead th {
+  color:#657b83;
+  border-color:#073642;
+}
+tbody {
+  border-top:1px solid #073642;
+}
+tr.even,tr.odd,tbody th {
+  border-color:#073642;
+}
+tr.odd td.active {
+  background:#073642;
+}
+td.region,
+td.module,
+td.container td.category {
+  background:transparent;
+  border-bottom:none;
+  border-top:none;
+  color:#839496;
+}
+#blocks td.region {
+  color:#657b83;
+}
+table.sticky-header {
+  background:#eee8d5;
+}
+#permissions td.module {
+  background:#eee8d5;
+  color:#657b83;
+}
+#permissions td.permission {
+  padding-left:1.5em;
+}
+td.revision-current {
+  background:#eee8d5;
+}
+div.admin-panel {
+  background:transparent;
+  border:1px solid #073642;
+}
+.admin-panel h3 {
+  background:transparent;
+  color:#657b83;
+}
+span.form-required,
+span.marker {
+  color:#dc322f;
+}
+div.error {
+  background:transparent;
+  border:2px solid #dc322f;
+  color:#839496;
+}
+tr.error {
+  background:transparent;
+  color:#839496;
+}
+div.notice {
+  background:transparent;
+  color:#839496;
+  border:2px solid #d33682;
+}
+div.status {
+  background:transparent;
+  border:2px solid #859900;
+  color:#839496;
+}
+div.help {
+  background:transparent;
+  border:2px solid #2aa198;
+  color:#839496;
+}
+div.warning {
+  background:transparent;
+  border:2px solid #b58900;
+  color:#839496;
+}
+div.admin-requirements, div.admin-required {
+  color: #93a1a1;
+}
+div.error a:link,
+div.error a:visited,
+div.status a:link,
+div.status a:visited,
+div.help a:link,
+div.help a:visited,
+div.warning a:link,
+div.warning a:visited,
+tr.warning a:link,
+tr.warning a:visited {
+  color:#93a1a1;
+  font-weight:700;
+}
+table tr.warning {
+  background:#9F3800;
+}
+table tr.warning td {
+  color:#9F3800;
+}
+div.admin-dependencies,
+div.admin-required {
+  color:#d33682;
+}
+table.system-status-report a:link,
+table.system-status-report a:visited,
+table.update a:link,table.update a:visited {
+  color:#93a1a1;
+  text-decoration:none;
+}
+div.messages {
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.update tr td {
+  border-bottom:1px solid #073642;
+  border-top:1px solid #073642;
+}
+.update tr.warning td,
+.update tr.warning {
+  color:#FFF6DF;
+  background:transparent;
+}
+.update tr.ok {
+  border:2px solid #2A6827;
+  background:transparent;
+}
+.update tr.error {
+  color:#FFF3F6;
+  background:transparent;
+}
+.update tr.warning table.version-recommended td {
+  background:#DF601B;
+}
+.update tr.error table.version-recommended td {
+  background:#000;
+}
+.form-item strong.error em {
+  color:#E41F0B;
+}
+.article-unpublished,
+.comment-unpublished {
+  background:transparent;
+}
+.preview .article,
+.preview .comment {
+  background:#268bd2;
+}
+#tasks ul.primary li a {
+  background:#073642;
+  border:none;
+  font-weight:700;
+  padding:0.35em 1.4em 0.5em;
+}
+#tasks ul.primary li a:hover,
+#tasks ul.primary li a:focus {
+  background:#333;
+}
+#tasks ul.primary li.active a,
+#tasks ul.primary li.active a:hover,
+#tasks ul.primary li.active a:focus {
+  background:#fdf6e3
+}
+textarea,
+select,
+input.text,
+input.form-text,
+input.title {
+  background:#fdf6e3;
+  border:1px solid #073642;
+  color:#586e75;
+}
+input.form-text:focus,
+input.text:focus,
+input.title:focus,
+textarea:focus,
+.form-select:focus {
+  background:#fdf6e3;
+  border:1px solid #859900;
+  color:#586e75;
+}
+fieldset legend {
+  padding:0 1em;
+}
+html.js fieldset.collapsed legend a {
+  background-image:none;
+}
+html.js fieldset.collapsible legend a {
+  background:none;
+  padding-left:0;
+}
+.resizable-textarea .grippie {
+  background:#000;
+  border-color:#073642;
+}
+li.leaf,
+li.collapsed,
+li.expanded {
+  color:#d33682;
+  list-style-image:none;
+}
+ul li.collapsed {
+  list-style-image: url(images/dark/arrow-right.png);
+}
+ul li.expanded {
+  list-style-image: url(images/dark/arrow-down.png);
+}
+.poll .bar {
+  background:#BBB;
+}
+.poll .bar .foreground {
+  background:#d33682;
+}
+table.views-entry {
+  background:#000;
+  color:#586e75;
+  border-color:#073642;
+}
+.views-tabset {
+  background:transparent;
+  color:#586e75;
+}
+.views-tabset .views-tabs {
+  background:#303030;
+  border-color:#073642;
+}
+.views-tabset .views-tabs ul li {
+  background:#666;
+  border-bottom:#073642 1px solid;
+}
+.views-tabset .views-tabs ul li.active {
+  background:#444;
+  background-image:none;
+}
+.views-tabset .views-tabs ul li a {
+  color:#fff;
+}
+.views-tabset .views-tabs ul li a:hover {
+  background:#000;
+  background-image:none;
+}
+.views-tabset .views-tabs ul li.active a {
+  background-image:none;
+  color:#FFF;
+}
+.views-tabset .views-tabs ul li.active a:hover {
+  background:#000;
+  background-image:none;
+  color:#FF0;
+}
+div.views-display-deleted,
+div.views-display-deleted div.top,
+div.views-display-deleted div.tab-section {
+  background:#586e75;
+}
+.views-display .tab-section .inside .views-category {
+  background:#303030;
+  border-color:#073642;
+}
+.views-display .tab-section .inside .views-category-title {
+  background:#242424;
+  border-color:#073642;
+}
+#views-ajax-pad form {
+  background:#555;
+  border-color:#073642;
+}
+a.views-button-configure,
+a.views-button-add,
+a.views-button-rearrange,
+a.views-button-remove {
+  background:transparent;
+  border-bottom:#073642 1px solid;
+  border-right:#073642 1px solid;
+}
+div.view-changed {
+  color:#b58900;
+}
+.views-display .tab-section .inside .defaulted {
+  color:#b58900;
+}
+.hilited {
+  background:#555;
+  color:#FFF;
+}
+#views-ajax-pad fieldset {
+  background:transparent;
+}
+#views-ajax-pad pre {
+  background:#222;
+  border-color:#073642;
+}
+.view-locked {
+  border:1px solid red;
+  color:red;
+}
+.ctools-modal-content input.form-text,
+.ctools-modal-content input.text,
+.ctools-modal-content input.title,
+.ctools-modal-content textarea,
+.ctools-modal-content select {
+  background:#FFF;
+  color:#000;
+}
+.ctools-modal-content input.form-text:focus,
+.ctools-modal-content input.text:focus,
+.ctools-modal-content input.title:focus,
+.ctools-modal-content textarea:focus,
+.ctools-modal-content select:focus {
+  background:#FFFFDF;
+  border-color:#073642;
+}
+.ctools-modal-content .description {
+  color:#555;
+}
+html.js div.ctools-dropdown div.ctools-dropdown-container ul li a {
+  width:160px;
+}
+#panels-dnd-main div.panels-display {
+  background:#444;
+  border-color:#073642;
+}
+.panel-portlet {
+  background:#444;
+  border-color:#073642;
+}
+.vertical-tabs-list li {
+  background:#303030;
+  border-color:#073642;
+}
+.vertical-tabs-list li.selected {
+  background:#242424;
+}
+.krumo-root {
+  color:#303030;
+}
+td,
+th,
+table.system-status-report th {
+  border-bottom:1px solid #073642;
+}
+tr.odd,
+tr.info,
+table.views-entry td.view-ops,
+table.views-entry td.view-name,
+table.views-entry td.view-name,
+table.views-entry td.view-ops,
+.panel-portlet .grabber {
+  background:#002b36;
+}
+tr.even,
+table.view-enabled td.view-name,
+table.view-enabled td.view-ops,
+#views-ajax-pad .form-buttons,
+div.changed,
+.panel-portlet .grabber:hover {
+  background:#073642;
+}
+tr.drag,
+tr.drag-previous,
+tr.selected td,
+#panels-dnd-main div.changed {
+  background:#666;
+}
+tr.even td.active,
+.views-display,
+.views-display .top {
+  background:#444;
+}
+.admin-panel dd,
+.page-admin-by-module .admin-panel .body p,
+table.view-disabled {
+  color:#999;
+}
+.description,
+div.ok,
+tr.ok,
+table tr.ok td {
+  color:#586e75;
+}
+.includes,
+.vertical-tabs-list li.selected strong {
+  color:#FFF;
+}
+.update .security-error,
+.ctools-modal-content a:hover {
+  color:#000;
+}
+ul.primary,
+ul.secondary {
+  border-bottom:0;
+}
+fieldset,
+.vertical-tabs {
+  background:transparent;
+  border-color:#073642;
+}
+.views-tabset .views-display,
+form#views-add-display-form {
+  border-color:#073642;
+}
+#views-ajax-title,
+#views-ajax-pad .message {
+  background:#242424;
+  border-color:#073642;
+}
+#views-ajax-pad .views-messages,
+form#views-ui-preview-form,
+#center form#views-ui-preview-form,
+.vertical-tabs-list {
+  border-color:#073642;
+}

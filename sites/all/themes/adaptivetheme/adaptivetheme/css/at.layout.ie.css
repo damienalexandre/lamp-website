@@ -1,0 +1,90 @@
+
+/* Be sure the layout is set */
+#main-content,
+#columns {
+  display: block;
+}
+#main-content,
+#columns,
+#content-column,
+.region-sidebar-first,
+.region-sidebar-second,
+.gpanel .region {
+  zoom: 1;
+}
+
+/* Circumvent sub-pixel rounding */
+.gpanel {
+  clear: both;
+}
+.gpanel .region {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.two-50 .region-two-50-second,
+.two-66-33 .region-two-66-33-second,
+.two-33-66 .region-two-33-66-second {
+  float: right;
+}
+.two-33-66 .region-two-33-66-first,
+.two-66-33 .region-two-66-33-second {
+  width: 33%;
+}
+.two-66-33 .region-two-66-33-first,
+.two-33-66 .region-two-33-66-second {
+  width: 66%;
+}
+.three-3x33 .region {
+  width: 32.666%;
+}
+.five-5x20 .region {
+  width: 19.2%;
+}
+.six-6x16 .region {
+  width: 15.833%;
+}
+.two-50 .region,
+.three-25-25-50 .region-three-25-25-50-third,
+.three-50-25-25 .region-three-50-25-25-first {
+  width: 49.5%;
+}
+.three-25-25-50 .region-three-25-25-50-first,
+.three-25-25-50 .region-three-25-25-50-second,
+.three-50-25-25 .region-three-50-25-25-second,
+.three-50-25-25 .region-three-50-25-25-third,
+.four-4x25 .region {
+  width: 24.25%;
+}
+.three-3x33 .region-three-33-second,
+.three-3x33 .region-three-2-33-second,
+.three-25-25-50 .region-three-25-25-50-second,
+.three-50-25-25 .region-three-50-25-25-second,
+.four-4x25 .region-four-second,
+.five-5x20 .region-five-second,
+.six-6x16 .region-six-second {
+  right: -1%;
+}
+.three-3x33 .region-three-33-third,
+.three-3x33 .region-three-2-33-third,
+.three-25-25-50 .region-three-25-25-50-third,
+.three-50-25-25 .region-three-50-25-25-third,
+.four-4x25 .region-four-third,
+.four-4x25 .region-four-2-third,
+.five-5x20 .region-five-third,
+.six-6x16 .region-six-third {
+  right: -2%;
+}
+.four-4x25 .region-four-fourth,
+.four-4x25 .region-four-2-fourth,
+.five-5x20 .region-five-fourth,
+.six-6x16 .region-six-fourth {
+  right: -3%;
+}
+.five-5x20 .region-five-fifth,
+.six-6x16 .region-six-fifth {
+  right: -4%;
+}
+.six-6x16 .region-six-sixth {
+  right: -5%;
+}
