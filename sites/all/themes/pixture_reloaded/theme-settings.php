@@ -69,6 +69,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'bf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'bf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'bf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'bf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form ['at'] ['font']['base_font_wrapper']['base_font_gwf_container'] = array (
@@ -125,6 +126,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'snf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'snf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'snf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'snf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form['at']['font']['site_name_font_wrapper']['site_name_font_gwf_container'] = array (
@@ -181,6 +183,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'ssf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'ssf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'ssf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'ssf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form['at']['font']['site_slogan_font_wrapper']['site_slogan_font_gwf_container'] = array (
@@ -237,6 +240,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'ptf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'ptf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'ptf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'ptf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form['at']['font']['page_title_font_wrapper']['page_title_font_gwf_container'] = array (
@@ -294,6 +298,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'ntf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'ntf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'ntf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'ntf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form['at']['font']['node_title_font_wrapper']['node_title_font_gwf_container'] = array (
@@ -351,6 +356,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'ctf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'ctf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'ctf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'ctf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form ['at']['font']['comment_title_font_wrapper']['comment_title_font_gwf_container'] = array (
@@ -409,6 +415,7 @@ function pixture_reloaded_form_system_theme_settings_alter(&$form, &$form_state)
       'btf-ss'  => t('Garamond, Perpetua, Times New Roman, serif'),
       'btf-sl'  => t('Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'),
       'btf-ms'  => t('Consolas, Monaco, Courier New, Courier, monospace'),
+      'btf-comic'  => t('Comic Sans MS'),
     ),
   );
   $form ['at']['font']['block_title_font_wrapper']['block_title_font_gwf_container'] = array (

@@ -263,6 +263,17 @@ body.bf-ms,
 .btf-ms .block-title {
   font-family: Consolas, Monaco, "Courier New", Courier, monospace;
 }
+/* comic! */
+body.bf-comic,
+.bf-comic .form-text,
+.snf-comic #site-name,
+.ssf-comic #site-slogan,
+.ptf-comic #page-title,
+.ntf-comic .article-title,
+.ctf-comic .comment-title,
+.btf-comic .block-title {
+  font-family: "Comic Sans MS", Courier, monospace;
+}
 /* Base fontsize */
 .fs-smallest {font-size: 0.833em;}
 .fs-small {font-size: 0.917em;}
