@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8219a312-2893-42d6-b5a8-6c8a2e7e2962" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fabfile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/default/default.settings.php" afterPath="$PROJECT_DIR$/sites/default/default.settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fabfile.py" afterPath="$PROJECT_DIR$/fabfile.py" />
     </list>
     <ignored path="lamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +81,7 @@
       <file leaf-file-name="fabfile.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fabfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="80" selection-start="781" selection-end="781" vertical-scroll-proportion="0.46391752">
+            <state line="46" column="46" selection-start="1489" selection-end="1526" vertical-scroll-proportion="0.72989196">
               <folding />
             </state>
           </provider>
@@ -522,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fabfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="80" selection-start="781" selection-end="781" vertical-scroll-proportion="0.46391752">
+        <state line="46" column="46" selection-start="1489" selection-end="1526" vertical-scroll-proportion="0.72989196">
           <folding />
         </state>
       </provider>

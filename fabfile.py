@@ -24,6 +24,7 @@ def exportFiles():
     with cd(drupalDirectory):
         run('cp sites/default/default.settings.php sites/default/settings.php');
 
+@task
 def exportDB():
     print(green('Starting DB export with drush'))
     now = datetime.datetime.now()
@@ -36,21 +37,20 @@ def exportDB():
     local('tar -czvf /tmp/lamp-sql.tar.gz /tmp/'+fileName)
 
     print(red('Uploading archive'))
-    put('/tmp/lamp-sql.tar.gz /tmp/lamp-sql.tar.gz')
+    put('/tmp/lamp-sql.tar.gz',  '/tmp/lamp-sql.tar.gz')
 
     print(green('Uncompress on distant'))
-    run('tar -C /tmp -xzvf /tmp/lamp-sql.tar.gz')
 
     sqlString = 'mysql --database=lamp --host=localhost --user=root --password=poney'
     print(red('Starting remote mysql import'))
-    run( sqlString + ' < /tmp/' + fileName)
+
+    run('mysqladmin -uroot -pponey create lamp')
+    run('tar -Oxzvf /tmp/lamp-sql.tar.gz | ' + sqlString)
 
     print(green('Cleanup!'))
     local('rm /tmp/' + fileName)
     local('rm /tmp/lamp-sql.tar.gz')
-    run('rm /tmp/' + fileName)
     run('rm /tmp/lamp-sql.tar.gz')
-
 
 @task(default=True)
 def deploy():
