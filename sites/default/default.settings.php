@@ -200,7 +200,21 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'lamp',
+      'username' => 'root',
+      'password' => 'poney',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
