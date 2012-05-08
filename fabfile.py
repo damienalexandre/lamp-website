@@ -52,6 +52,15 @@ def exportDB():
     local('rm /tmp/lamp-sql.tar.gz')
     run('rm /tmp/lamp-sql.tar.gz')
 
+@task
+def getStats():
+    with cd('/tmp'):
+        print(green('Get access log summary'))
+        put('./logparse',  '/var/www/lamp/logparse')
+        run('chmod +x /var/www/lamp/logparse')
+        run('/var/www/lamp/logparse -f /var/log/apache2/other_vhosts_access.log -h http://dist.lamp.fr/')
+        get('/tmp/urls.txt',  './urls.txt')
+
 @task(default=True)
 def deploy():
     exportFiles()

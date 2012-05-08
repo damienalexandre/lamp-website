@@ -1,0 +1,115 @@
+#!/usr/bin/perl
+# NAME:      logparse
+# AUTHOR:    Jeffrey Fulmer
+# EMAIL:     jdfulmer@armstrong.com
+# DATE:      Thu Mar 14 15:11:05 EST 2002
+# This program builds URLs from apache style
+# access logs and populates a urls.txt file.
+#
+use Getopt::Std;
+use vars qw($opt_V $opt_h $opt_v $opt_H $opt_f $VERSION);
+use strict;
+
+my  $LOCK_SH = 1;                # shared lock (not used)
+my  $LOCK_EX = 2;                # exclusive lock
+my  $LOCK_NB = 4;                # non-blocking lock (not used)
+my  $LOCK_UN = 8;                # unlock
+my ($host, $file);               # host to set, file to read
+my ($verbose);                   # boolean, verbose mode
+
+getopts( 'VHvh:f:' );            # get cmd line options
+
+$VERSION = sprintf(              # specify version number
+  "%1.2f", 1.00                  #
+);
+sub Version { $VERSION; }        #
+
+if( $opt_V == 1 ){               # user wants version number
+  printf(                        #
+    "logparse %s\n", &Version    # print it and exit
+  );                             #
+  exit 0;                        #
+}                                #
+
+if( $opt_H == 1 ){               # user wants assistance
+  display_help();                # display help section
+  exit( 0 );                     # and exit nicely
+}                                #
+
+if( $opt_v == 1 ){               # user wants verbose mode
+  $verbose = 1;                  # set boolean true
+}                                #
+
+if( $opt_h ne "" ){               # user wants to change date
+  $host = $opt_h;                # set the local date value
+}                                #
+
+if( $opt_f ne "" ){              # user wants to change month
+  $file = $opt_f;                # set the local month value
+}                                #
+
+if(( $host eq "" )||( $file eq "" )){
+  display_help();
+  exit( 0 );
+}
+
+parse_it( $host, $file );
+
+exit( 0 );
+
+sub
+parse_it()
+{
+  my  $lines = "";
+  my( $host, $file ) = @_;
+  my( @LINES );
+  my $out = "urls.txt";
+
+  $host =~ s/(\/)$//;
+
+  if( open( FILE, "<" . $file )){
+    flock( FILE, $LOCK_EX );
+    @LINES = <FILE>;
+    flock( FILE, $LOCK_UN );
+    close( FILE );
+    if( open ( FILE, ">" . $out )){
+      flock( FILE, $LOCK_EX );
+      for( my $x = 0; $x <= $#LINES; $x++ ){
+        $LINES[$x] =~ s/^.*GET //;
+        $LINES[$x] =~ s/^.*HEAD //;
+        $LINES[$x] =~ s/HTTP.*$//;
+        if( $host =~ m/^http/ ){
+          $LINES[$x] =~ s/^/$host/;
+        }
+        else{
+          $LINES[$x] =~ s/^/http:\/\/$host/;
+        }
+        if( $verbose ){ print $LINES[$x]; }
+        print FILE $LINES[$x];
+      }
+      flock( FILE, $LOCK_UN );
+      close( FILE );
+    }
+    else{ die "couldn't open: $file"; }
+  }
+  else{ die "couldn't open: $file"; }
+}
+
+sub
+display_help
+{
+  print <<END_OF_HELP;
+logparse v$VERSION
+Usage: logparse [options]
+       logparse -h http://www.whoohoo.com -f access_log
+Options:
+  -V           VERSION, print version number to screen.
+  -H           HELP, display this section.
+  -v           VERBOSE, print progress info to screen.
+  -h hostname  HOST, set the URL's hostname.
+  -f filename  FILE, the access_log file to parse for URLs.
+END_OF_HELP
+  return;
+}
+
+1;
