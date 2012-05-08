@@ -59,11 +59,9 @@ tr.even {
 
 /* Header */
 #header  {
-  background: #b800a7 url("../images/header-tile.png") repeat-x left top;
+  background: #b800a7;
 }
-#header .header-inner {
-  background: transparent url("../images/header.png") no-repeat top left;
-}
+
 @media only screen and (max-width:320px) {
   #header,#header .header-inner {background: #b800a7;}
 }

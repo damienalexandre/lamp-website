@@ -246,7 +246,7 @@ a.active:focus {
 /* Set heights on branding and header elements */
 #header,
 #branding {
-  max-height: 88px;
+  max-height: 135px;
 }
 #head-elements {
   min-height: 88px;
