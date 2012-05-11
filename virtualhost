@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+  ServerName dist.lamp.fr
+  DocumentRoot "/var/www/lamp"
+
+  <Directory "/var/www/lamp">
+    AllowOverride All
+    Allow from All
+  </Directory>
+</VirtualHost>

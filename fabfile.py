@@ -11,7 +11,10 @@ def exportFiles():
     local('tar -czvf /tmp/lamp.tar.gz --exclude .git --exclude "*.log" --exclude "sites/*/settings*.php" .')
     print(red('Uploading archive'))
     put('/tmp/lamp.tar.gz', '/tmp/lamp.tar.gz')
-
+    afterUpload()
+    
+@task
+def afterUpload():
     print(green('Uncompress on distant'))
     with cd('/tmp'):
         drupalDirectory = '/var/www/lamp/'
@@ -60,6 +63,12 @@ def getStats():
         run('chmod +x /var/www/lamp/logparse')
         run('/var/www/lamp/logparse -f /var/log/apache2/other_vhosts_access.log -h http://dist.lamp.fr/')
         get('/tmp/urls.txt',  './urls.txt')
+
+@task
+def sendVirtualHost():
+    put('./virtualhost', '/etc/apache2/sites-available/dist.lamp.fr')
+    run('a2ensite dist.lamp.fr')
+    run('/etc/init.d/apache2 restart')
 
 @task(default=True)
 def deploy():
