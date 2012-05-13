@@ -70,6 +70,12 @@ def sendVirtualHost():
     run('a2ensite dist.lamp.fr')
     run('/etc/init.d/apache2 restart')
 
+@task
+def mysqlTuner():
+    put('./mysqltuner.pl', '/var/www/lamp/mysqltuner.pl')
+    run('chmod +x /var/www/lamp/mysqltuner.pl')
+    run('/var/www/lamp/mysqltuner.pl')
+
 @task(default=True)
 def deploy():
     exportFiles()
