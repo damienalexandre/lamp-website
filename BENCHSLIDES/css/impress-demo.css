@@ -1,26 +1,4 @@
 /*
-    So you like the style of impress.js demo?
-    Or maybe you are just curious how it was done?
-
-    You couldn't find a better place to find out!
-
-    Welcome to the stylesheet impress.js demo presentation.
-
-    Please remember that it is not meant to be a part of impress.js and is
-    not required by impress.js.
-    I expect that anyone creating a presentation for impress.js would create
-    their own set of styles.
-
-    But feel free to read through it and learn how to get the most of what
-    impress.js provides.
-
-    And let me be your guide.
-
-    Shall we begin?
-*/
-
-
-/*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
 
@@ -61,6 +39,7 @@ ol, ul {
     list-style: square;
     text-align: left;
     padding-top:20px;
+    padding-left: 40px;
 }
 blockquote, q {
     quotes: none;
@@ -76,24 +55,24 @@ table {
     border-spacing: 0;
 }
 
-/*
-    Now here is when interesting things start to appear.
+/**
+ * Custom font
+ */
+@font-face { font-family: "Enriqueta"; src: url('../font/Enriqueta-Regular.ttf'); }
+@font-face { font-family: "Enriqueta"; font-weight: bold; src: url('../font/Enriqueta-Bold.ttf'); }
 
-    We set up <body> styles with default font and nice gradient in the background.
-    And yes, there is a lot of repetition there because of -prefixes but we don't
-    want to leave anybody behind.
-*/
 body {
-    font-family: 'PT Sans', sans-serif;
+
+    font-family: 'Enriqueta', georgia, serif;
     min-height: 740px;
 
     background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(230, 230, 255)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(230, 230, 255), rgb(110, 190, 190));
+    background:    -moz-radial-gradient(rgb(230, 230, 255), rgb(110, 190, 190));
+    background:     -ms-radial-gradient(rgb(230, 230, 255), rgb(110, 190, 190));
+    background:      -o-radial-gradient(rgb(230, 230, 255), rgb(110, 190, 190));
+    background:         radial-gradient(rgb(230, 230, 255), rgb(110, 190, 190));
 }
 
 /*
@@ -177,7 +156,6 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
 }
@@ -228,10 +206,8 @@ a:focus {
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
-    letter-spacing: -1px;
     text-align: center;
 }
 
@@ -265,6 +241,29 @@ a:focus {
 #test-screen
 {
     margin-left: -150px;
+}
+
+blockquote {
+    background:#f9f9f9;
+    border-left:10px solid #ccc;
+    quotes:"\201C""\201D""\2018""\2019";
+    padding: 20px;
+    overflow: hidden;
+    text-indent: 100px;
+}
+blockquote:before {
+    color:#888;
+    font-size: 5em;
+    position: absolute;
+    opacity: 0.3;
+    top:-20px;
+    left: -30px;
+    content:open-quote;
+    float: left;
+}
+blockquote small {
+    font-size: 0.4em;
+    float: right;
 }
 
 /*
