@@ -33,12 +33,18 @@
 
 <body class="impress-not-supported">
 <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    <p>Your browser <strong>doesn't support the features required</strong> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <strong>Chrome</strong>, <strong>Safari</strong> or <strong>Firefox</strong> browser.</p>
 </div>
 
 <div id="impress">
-    <div id="author" class="step slide" data-x="-2000" data-y="-1500">
+    <div id="author-bros" class="step slide" data-x="-2000" data-y="-1500">
+        <span class="title" style="margin-top: 40px">Damien Alexandre</span>
+        <img src="img/rainbros.gif" />
+        <span class="title second-title">Benjamin Clay</span>
+    </div>
+
+    <div id="author" class="step slide" data-x="-1000" data-y="-1500">
         <span class="top title">Damien Alexandre</span>
         <p><img src="img/twitter.png" style="vertical-align: bottom;"/> @damienalexandre</p>
         <p>
@@ -56,11 +62,6 @@
         </p>
     </div>
 
-    <div id="author-bros" class="step slide" data-x="-1000" data-y="-1500">
-        <span class="title" style="margin-top: 40px">Damien Alexandre</span>
-        <img src="img/rainbros.gif" />
-        <span class="title second-title">Benjamin Clay</span>
-    </div>
 
     <div id="cleverage" class="step slide" data-x="0" data-y="-1500">
         <img src="img/cleverage-logo.png" alt="CleverAge Logo" />
@@ -92,50 +93,46 @@
         element should be rotated by 90 degrees clockwise.
 
     -->
-    <div id="perf-1" class="step slide" data-x="850" data-y="3000">
+    <div id="perf-def" class="step slide" data-x="850" data-y="3000">
         <span class="title">Performances</span>
         <br />
-        <p>Personne n'aime attendre un train en retard.</p>
+        <p>Un site excellent qui met trop de temps à s'afficher, c'est un site pourri.</p>
+        <p>Attention, il n'existe pas *UNE* configuration de la stack LAMP parfaite</p>
+
+        <img src="img/youdontsay.png" alt="YOU DON'T SAY?" class="right" />
     </div>
 
-    <div id="perf-2" class="step slide" data-x="850" data-y="3000">
-        <span class="title">Performances</span>
-        <br />
-        <p>Personne n'aime attendre un train en retard.</p>
-
-        <p>Personne n'aime attendre plusieurs secondes qu'un site web s'affiche.</p>
-    </div>
-
-    <div id="perf-3" class="step slide" data-x="850" data-y="3000">
-        <span class="title">Performances</span>
-        <br />
-        <p>Personne n'aime attendre un train en retard.</p>
-
-        <p>Personne n'aime attendre plusieurs secondes qu'un site web s'affiche.</p>
-
-        <br />
-        <p>Front, Back, Architecture.</p>
-    </div>
-
+    <!--
     <div id="perf-quote" class="step" data-x="1850" data-y="3000">
-
-
         <blockquote>
 
           <p>We should forget about small efficiencies, say about 97% of the time: <strong>premature optimization is the root of all evil</strong></p>
           <small>Donald Knuth</small>
 
         </blockquote>
+    </div>
+    -->
 
+    <div id="pic-1" class="step" data-x="1850" data-y="3000">
+        <img src="img/tweet1.png" alt="Notch" />
     </div>
 
 
-    <div id="stack-lamp" class="step slide" data-x="2850" data-y="3000">
+    <div id="pic-2" class="step" data-x="2400" data-y="3000">
+        <img src="img/tweet2.png" alt="Notch" />
+    </div>
+
+     <div id="title-stack-lamp" class="step" data-x="4500" data-y="3000" data-scale="3" data-rotate-x="-40" data-rotate-y="10" >
+        <span class="try">La stack LAMP</h1>
+    </div>
+
+
+    <div id="stack-lamp" class="step slide" data-x="3850" data-y="4000">
         <ul>
-            <li><b class="scaling">L</b><span>inux</span></li>
-            <li><b class="scaling">A</b><span>pache</span></li>
-            <li><b class="scaling">M</b><span>ySQL</span></li>
-            <li><b class="scaling">P</b><span>HP</span></li>
+            <li><span><strong>L</strong>inux</span> : 85% des serveurs web</li>
+            <li><span><strong>A</strong>pache</span> : 65% des serveurs web</li>
+            <li><span><strong>M</strong>ySQL</span> : 45% des serveurs web</li>
+            <li><span><strong>P</strong>HP</span> : 77% des serveurs web</li>
         </ul>
     </div>
 
@@ -144,22 +141,25 @@
         <br />
         <p>Serveur basique (kimsufi OVH), 50€ / mois</p>
         <ul>
-            <li>Intel i5 CPU 760 @ <b>4 x 2.80GHz</b></li>
-            <li><b>16 Go</b> de mémoire DDR3</li>
+            <li>Intel i5 CPU 760 @ <strong>4 x 2.80GHz</strong></li>
+            <li><strong>16 Go</strong> de mémoire DDR3</li>
             <li>Disque 1To </li>
             <li>Connexion 100 Mbps</li>
         </ul>
+
+        <img src="img/notbad.jpg" alt="Not bad!" class="right" />
+
     </div>
 
     <div id="test-step" class="step slide" data-x="1850" data-y="4000">
         <span class="title">Procédure de test</span>
         <br />
         <ul>
-            <li>Debian <b>Squeeze</b> frais</li>
-            <li><b>Drupal</b> - 10 000 contenus générés, sans cache, ni cron</li>
+            <li>Debian <strong>Squeeze</strong> frais <img src="img/squeeze.jpg" alt="" /></li>
+            <li><strong>Drupal</strong> - 10 000 contenus générés, sans cache, ni cron</li>
             <li>Surf sur le site</li>
-            <li>Extraction d'urls depuis les <b>logs</b> apaches</li>
-            <li><b>Siege</b> depuis un autre serveur</li>
+            <li>Extraction d'urls depuis les <strong>logs</strong> apaches</li>
+            <li><strong>Siege</strong> depuis un autre serveur</li>
             <li>Stress test de 50 à 350 concurrents</li>
         </ul>
     </div>
@@ -172,34 +172,228 @@
     <div id="bench-1-install" class="step slide" data-x="850" data-y="5000" data-rotate-x="-90" >
         <span class="title">Installation basique</span>
         <ul>
-            <li>apt-get install apache2 mysql-server php5 php-pear php5-mysql php5-gd</li>
-            <li>a2enmod rewrite</li>
+            <li><code>apt-get install <strong>apache2 mysql-server php5</strong> php-pear php5-mysql php5-gd</code></li>
+            <li><code>a2enmod rewrite</code></li>
         </ul>
     </div>
 
     <div id="bench-1-versions" class="step slide" data-x="1850" data-y="5000" data-rotate-x="-90" >
         <span class="title">Versions</span>
         <ul>
-            <li>PHP : <b>5.3.3</b>-7+squeeze9</li>
-            <li>MySQL : <b>5.1</b>.61-0+squeeze1 sans mysqlnd</li>
-            <li>Apache : <b>2.2</b>.16-6+squeeze7</li>
+            <li>PHP : <strong>5.3.3</strong>-7+squeeze9</li>
+            <li>MySQL : <strong>5.1</strong>.61-0+squeeze1 sans mysqlnd</li>
+            <li>Apache : <strong>2.2</strong>.16-6+squeeze7</li>
         </ul>
     </div>
 
     <div id="bench-1-results" class="step slide" data-x="2850" data-y="5000" data-rotate-x="-90" >
         <span class="title">Bench de référence</span>
         <ul>
-            <li>Maximum = <b>45 req/s</b></li>
-            <li>Temps de réponse = jusqu'à <b>7 secondes</b></li>
+            <li>Maximum = <strong>45 req/s</strong></li>
+            <li>Temps de réponse = jusqu'à <strong>7 secondes</strong></li>
         </ul>
+        <img src="img/fuckin-kiddin.png" alt="Are you kiddin' me?" />
     </div>
 
-    <div id="htop" class="step" data-x="2850" data-y="6000" data-rotate-x="-90" >
+    <div id="htop" class="step" data-x="2850" data-y="7000" data-rotate-x="-90" >
         <img src="img/htop.png" alt="htop"/>
     </div>
 
-    <div id="htop-details" class="step" data-x="2850" data-y="6100" data-rotate-x="-90" >
-        TOTO
+    <div id="htop-details" class="step slide" data-x="1850" data-y="7000" data-rotate-x="-90" >
+        <span class="title">htop</span>
+        <p>Doit être inférieur à votre nombre de CPU</p>
+        <p>Avec 4 cores, un load au dessus de 3.5 est une "anomalie"</p>
+        <p>ou pas.</p>
+
+        <code>
+            1.03        0.22        0.11
+            1min         5min       15min
+        </code>
+
+        <span class="important">Monitorer ses serveurs !</span>
+    </div>
+
+    <div id="title-php" class="step" data-x="1800" data-y="7000" data-scale="2" data-rotate-x="0" data-rotate-y="-40" >
+        <img src="img/php.png" alt="PHP" />
+    </div>
+
+    <div id="requete-php" class="step" data-x="2400" data-y="6000" data-rotate-y="-40" >
+        <img src="img/compil-php.png" alt="Compilation PHP" />
+    </div>
+
+    <div id="requete-php-apc" class="step" data-x="4000" data-y="6000" data-rotate-y="-40" >
+        <img src="img/compil-php-apc.png" alt="Compilation PHP avec APC" />
+    </div>
+
+    <div id="php-apc" class="step" data-x="6700" data-y="6000" data-rotate-y="-40" >
+        <img src="img/apc.jpg" alt="APC" />
+    </div>
+
+    <div id="php-apc-free-win" class="step slide" data-x="9000" data-y="6000" data-rotate-y="-40" >
+        <span class="title">APC : Cache d'OpCode</span>
+        <p>
+            <code>apt-get install php5-apc</code>
+            <br />
+            On obtient 70 req/s et temps de réponse largement diminués<br />
+            <br />
+            <strong>FREE WIN</strong>
+        </p>
+        <img src="img/fuckyeah.png" alt="FUCK YEAH!" class="right" />
+    </div>
+
+    <div id="apc-quote" class="step" data-x="9000" data-y="5000" data-rotate-y="-40" >
+        <blockquote>
+
+          <p>If you care about performance and don’t use a bytecode cache then you don’t really care about performance. <strong>Please get one and start using it. </strong></p>
+          <small>Stas Malyshev, PHP Core Contributor de PHP, Zend employee</small>
+
+        </blockquote>
+    </div>
+
+
+    <div id="dotdeb-prez" class="step slide" data-x="9000" data-y="4000" data-rotate-y="-40" >
+        <p>Dotdeb, maintenu par Guillaume Plessis</p>
+        <ul>
+            <li>PHP 5.4 et 5.3 + extensions</li>
+            <li>MySQL 5.5 and 5.1</li>
+            <li>Percona toolkit</li>
+            <li>Nginx…</li>
+        </ul>
+
+        <p>Sur Debian 6.0 pour amd64 et i386.</p>
+        <p>Protip® : Laissez la compilations à ceux dont c'est le métier.</p>
+    </div>
+
+    <div id="dotdeb-conf" class="step slide" data-x="9000" data-y="3000" data-rotate-y="-40" >
+        <p>/etc/apt/sources.list</p>
+        <code>
+            /etc/apt/sources.list :
+            deb http://packages.dotdeb.org squeeze all
+            deb-src http://packages.dotdeb.org squeeze all
+            wget http://www.dotdeb.org/dotdeb.gpg
+            cat dotdeb.gpg | sudo apt-key add -
+            apt-get update
+        </code>
+    </div>
+
+    <div id="dotdeb-install" class="step slide" data-x="9000" data-y="2000" data-rotate-y="-40" >
+        <code>
+            apt-get install apache2 mysql-server php5 php-pear php5-mysql php5-gd php5-apc
+            a2enmod rewrite
+        </code>
+    </div>
+
+    <div id="dotdeb-versions" class="step slide" data-x="9000" data-y="1000" data-rotate-y="-40" >
+        <span class="title">Versions</span>
+        <ul>
+            <li>PHP : <strong>5.3.13</strong>-1+dotdeb.0</li>
+            <li>MySQL : <strong>5.5</strong>.24 avec mysqlnd</li>
+            <li>Apache : <strong>2.2</strong>.16 (identique)</li>
+        </ul>
+
+        <p>"fonctions avancés du driver MySQL natif pour PHP" à 16:30, Espace Adenauer par Serge Frezefond</p>
+    </div>
+
+    <div id="dotdeb-result" class="step slide" data-x="9000" data-y="0" data-rotate-y="-40" >
+        <p>5 secondes de temps de réponse, et presque 100 req/s</p>
+        <img src="img/chart-dotdeb-apc.png" />
+    </div>
+
+    <div id="tuning" class="step" data-x="8000" data-y="0" data-rotate-y="-40" >
+        <img src="img/brace-config.jpg" />
+    </div>
+
+    <div id="mysqltuner" class="step" data-x="7000" data-y="0" data-rotate-y="-40" >
+        <span class="title">MySQLTuner.pl</span>
+        <img src="img/mysqltuner.png" />
+    </div>
+
+    <div id="mysqltunerprimer" class="step" data-x="7000" data-y="1000" data-rotate-y="-40" >
+        <span class="title">MySQL Tuning Primer.pl</span>
+        <img src="img/tuning-primer.png" />
+    </div>
+
+    <div id="mysql-config" class="step slide" data-x="7000" data-y="2000" data-rotate-y="-40" >
+        <span class="title">Configuration de MySQL</span>
+        <ul>
+            <li>innodb_thread_concurrency = 0</li>
+            <li>innodb_buffer_pool_size = 1024M</li>
+            <li>innodb_flush_method = O_DIRECT</li>
+            <li>max_connections = 300</li>
+            <li>query_cache_limit = 1M</li>
+            <li>query_cache_size = 200M</li>
+        </ul>
+    </div>
+
+    <div id="apache2-status" class="step slide" data-x="7000" data-y="3000" data-rotate-y="-40" >
+        <span class="title">Apache2 : mod_status</span>
+        <ul>
+            <li>Le nombre de worker en cours / en attente</li>
+            <li>Le status complet de chaque worker</li>
+            <li>Le uptime du serveur</li>
+            <li>Les moyennes de poids, req / secondes...</li>
+            <li>L'utilisation du CPU</li>
+            <li>Les requêtes et leurs hosts</li>
+        </ul>
+    </div>
+
+    <div id="apache2-status-screen" class="step" data-x="7000" data-y="4000" data-rotate-y="-40" >
+        <img src="img/apache-status.png" />
+    </div>
+
+    <div id="install-status" class="step slide" data-x="7000" data-y="5000" data-rotate-y="-40" >
+        <span class="title">Apache2 : installation de mod_status</span>
+        <code>
+            a2enmod mod_status
+            ExtendedStatus On (pour avoir plus d'infos)
+
+            <Location /server-status>
+                SetHandler server-status
+
+                Order Deny,Allow
+                Deny from all
+                Allow from .pony.com
+            </Location>
+        </code>
+    </div>
+
+    <div id="config-a2-php-apc" class="step slide" data-x="6000" data-y="5000" data-rotate-y="-40" >
+        <span class="title">Apache2 / PHP / APC</span>
+        <p>Désactiver les modules inutiles : </p>
+        <p>authn_file, authz_default, authz_groupfile, authz_user, autoindex, deflate, negotiation, reqtimeout, setenvif, env, cgi</p>
+
+        <p> MaxClient de 150 à 250</p>
+        <p>apc.stat = 0</p>
+    </div>
+
+    <div id="result-apache2-php-apc" class="step" data-x="5000" data-y="5000" data-rotate-y="-40" >
+        <span class="title">~95req/s - < 5 secondes</span>
+        <img src="img/best-of-classic-lamp.png" />
+    </div>
+
+    <div id="coup-de-pied" class="step" data-x="5000" data-y="6000" data-rotate-y="0" data-rotate-x="90">
+        <img src="img/lamp.jpg" />
+    </div>
+
+    <div id="coup-de-pied-2" class="step" data-x="5000" data-y="6000" data-z="1000" data-rotate-y="0" data-rotate-x="90">
+        <p>Apache => Ngnix</p>
+        <p>MySQL => MariaDB</p>
+        <p>Linux => Windows</p>
+        <p>PHP   => PERL</p>
+    </div>
+
+    <div id="coup-de-pied-troll" class="step" data-x="5000" data-y="6000" data-z="2000" data-rotate-y="0" data-rotate-x="90">
+        <img src="img/troll.png" alt="Trollface" />
+    </div>
+
+    <div id="modif-stack" class="step" data-x="5000" data-y="6000" data-z="3000" data-rotate-y="0" data-rotate-x="90">
+        <p>Modifier notre stack logiciel sans peine et sans avoir à toucher à notre code PHP.<br />
+        Nous ne sommes pas des sysadmins. C'est un métier.</p>
+    </div>
+
+
+    <div id="maria" class="step" data-x="5000" data-y="6000" data-z="4000" data-rotate-y="0" data-rotate-x="90">
+        <img src="img/maria.png" alt="MariaDB" />
     </div>
 
 
@@ -213,7 +407,7 @@
 
     -->
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+        <p>and <strong>tiny</strong> ideas</p>
     </div>
 
     <!--
@@ -237,11 +431,11 @@
 
     -->
     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+        <p>by <b class="positioning">positioning</strong>, <b class="rotating">rotating</strong> and <b class="scaling">scaling</strong> them on an infinite canvas</p>
     </div>
 
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+        <p>the only <strong>limit</strong> is your <b class="imagination">imagination</strong></p>
     </div>
 
     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
@@ -266,7 +460,7 @@
 
     -->
     <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <strong>3D<sup>*</sup></strong>?</p>
         <span class="footnote">* beat that, prezi ;)</span>
     </div>
 
