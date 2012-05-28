@@ -83,6 +83,7 @@
         <span class="try">Coup de pied dans la</span>
         <h1>LAMP <img src="img/forumphp.png" alt="" /></h1>
 
+        <span class="tiny">Ceci n'est pas une conférence sur le cyclimse</span>
     </div>
 
     <!--
@@ -395,6 +396,136 @@
     <div id="maria" class="step" data-x="5000" data-y="6000" data-z="4000" data-rotate-y="0" data-rotate-x="90">
         <img src="img/maria.png" alt="MariaDB" />
     </div>
+
+    <div id="maria-desc-1" class="step slide" data-x="5000" data-y="6000" data-z="5000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">MariaDB is the new MySQL</span>
+        <ul>
+            <li>2008 : Sun achète MySQL (et ça devient bof)</li>
+            <li>avril 2009 : Oracle achète Sun</li>
+            <li>mai 2009 : Monty Widenius, créateur de MySQL, démissionne et crée The Monty Program. Sa nouvelle société crée un fork nommé MariaDB</li>
+        </ul>
+    </div>
+
+    <div id="maria-desc-2" class="step slide" data-x="5000" data-y="6000" data-z="6000" data-rotate-y="0" data-rotate-x="90">
+        <ul>
+            <li>Vraiment opensource (MySQL contient des features réservés aux entreprises)</li>
+            <li>Est et restera sous licence GPL (v2)</li>
+            <li>100% compatible avec MySQL</li>
+            <li>Créé par les créateurs de MySQL</li>
+            <li>Haut lieu de l'innovation technologique du SGBD :)</li>
+        </ul>
+    </div>
+
+    <div id="maria-desc-3" class="step slide" data-x="5000" data-y="6000" data-z="7000" data-rotate-y="0" data-rotate-x="90">
+        <ul>
+            <li>Déjà utilisé chez PAP, Paybox, OLX, Jelastic...</li>
+            <li>Support disponible</li>
+                <ul>
+                    <li>SkySQL</li>
+                    <li>Percona Inc</li>
+                    <li>Monty Program</li>
+                    <li>FromDual</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="maria-desc-4" class="step slide" data-x="5000" data-y="6000" data-z="8000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">MariaDB 5.5</span>
+        <ul>
+            <li>Threadpool</li>
+            <li>Group commit dans le log binaire</li>
+            <li>Lib client non bloquante</li>
+            <li>SphinxSE pour le full-text</li>
+            <li>GIS</li>
+        </ul>
+    </div>
+
+    <div id="maria-desc-5" class="step slide" data-x="5000" data-y="6000" data-z="9000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Facile à installer</span>
+        <p>Drop-in replacement pour le binaire MySQL.</p>
+        <code>
+            # MariaDB repository list - created 2012-05-13 14:29 UTC
+            # http://downloads.mariadb.org/mariadb/repositories/
+            deb http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main
+            deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main
+
+            apt-get update
+            apt-get install mariadb-server-5.5
+        </code>
+
+        <p>Ne pas oublier d'exclure dotdeb du sources.list</p>
+    </div>
+
+    <div id="maria-threadpool" class="step slide" data-x="5000" data-y="6000" data-z="10000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Le Threadpool</span>
+        <p>Oracle le propose sous forme de plugin dans la version commerciale de MySQL.</p>
+        <code>
+            thread_handling=pool-of-threads
+        </code>
+        <p>La licence de MySQL Entreprise n'autorise pas la diffusion de benchmark comparatif sans l'accord écrit d'Oracle.</p>
+    </div>
+
+    <div id="maria-threadpool-2" class="step slide" data-x="5000" data-y="6000" data-z="11000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Le Threadpool</span>
+        <p>Utilisation de sysbench :</p>
+        <code>
+            sysbench --test=oltp --oltp-table-size=1G --db-driver=mysql --mysql-host=localhost --mysql-user=root --mysql-password=poney --init-rng=1 --num-threads=256 --max-requests=0 --oltp-read-only --oltp-dist-type=uniform --max-time=180 run
+        </code>
+    </div>
+
+    <div id="maria-threadpool-screen" class="step" data-x="3000" data-y="6000" data-z="11000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Le Threadpool</span>
+        <img src="img/threadpool.png" alt="Threadpool" />
+    </div>
+
+    <div id="nginx" class="step" data-x="3000" data-y="6000" data-z="10000" data-rotate-y="0" data-rotate-x="90">
+        <img src="img/nginx-logo.png" alt="NGINX" />
+    </div>
+
+
+    <div id="nginx-prez" class="step slide" data-x="3000" data-y="6000" data-z="9000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Nginx</span>
+        <ul>
+            <li>Igor Sysoev en 2002</li>
+            <li>Documentation en anglais en 2006</li>
+            <li>Explosion en 2008</li>
+            <li>Levée de fond de 3M$ en 2011</li>
+            <li>Nginx HQ @ SF en 2011</li>
+
+        </ul>
+        <img src="img/absolut_nginx.jpg" alt="Absolut Nginx" />
+    </div>
+
+    <div id="nginx-details" class="step slide" data-x="3000" data-y="6000" data-z="8000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Nginx</span>
+        <ul>
+            <li>Développé pour le fort trafic</li>
+            <li>C10K Problem</li>
+            <li>Noyau minimal, beaucoup de modules</li>
+            <li>Traitements asynchrones</li>
+            <li>Peu de ressources utilisées !</li>
+        </ul>
+    </div>
+
+    <div id="php-fpm" class="step slide" data-x="3000" data-y="6000" data-z="7000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">PHP-FPM</span>
+        <ul>
+            <li>FastCGI Process Manager</li>
+            <li>Implémentation du FastCGI pour PHP</li>
+            <li>Plusieurs pools de PHP avec configuration</li>
+            <li>SlowLog</li>
+        </ul>
+    </div>
+
+    <div id="install-nginx-php-fpm" class="step slide" data-x="3000" data-y="6000" data-z="6000" data-rotate-y="0" data-rotate-x="90">
+        <span class="title">Nginx et PHP-FPM</span>
+        <code>apt-get install nginx php5-fpm</code>
+        <p>Copier/Coller de la conf Drupal sur wiki nginx</p>
+
+        <img src="img/thatsall.gif" />
+    </div>
+
 
 
     <!--
