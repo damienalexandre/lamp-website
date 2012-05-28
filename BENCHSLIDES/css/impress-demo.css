@@ -55,6 +55,14 @@ table {
     border-spacing: 0;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 /**
  * Custom font
  */
@@ -372,7 +380,7 @@ h1 {
     opacity: 1;
     -moz-opacity: 1;
     filter:alpha(opacity=1);
-    -webkit-transition: opacity 5s linear;;
+    -webkit-transition: opacity 0.5s linear;;
 }
 
 
