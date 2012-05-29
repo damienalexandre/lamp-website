@@ -4,6 +4,8 @@
 
     You can probably argue if it is needed here, or not, but for sure it
     doesn't do any harm and gives us a fresh start.
+
+    CSS heavily inspired by the impress-demo.css from ImpressJS
 */
 
 html, body, div, span, applet, object, iframe,
@@ -70,7 +72,6 @@ table {
 @font-face { font-family: "Enriqueta"; font-weight: bold; src: url('../font/Enriqueta-Bold.ttf'); }
 
 body {
-
     font-family: 'Enriqueta', georgia, serif;
     min-height: 740px;
 
@@ -83,23 +84,12 @@ body {
     background:         radial-gradient(rgb(230, 230, 255), rgb(110, 190, 190));
 }
 
-/*
-    Now let's bring some text styles back ...
-*/
 b, strong { font-weight: bold }
 i, em { font-style: italic }
 
-/*
-    ... and give links a nice look.
-*/
 a {
     color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(255,255,255,0.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
-
+    text-decoration: underline;
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
     -ms-transition:     0.5s;
@@ -109,21 +99,12 @@ a {
 
 a:hover,
 a:focus {
-    background: rgba(255,255,255,1);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+    color:black;
 }
 
-/*
-    Because the main point behind the impress.js demo is to demo impress.js
-    we display a fallback message for users with browsers that don't support
-    all the features required by it.
-
-    All of the content will be still fully accessible for them, but I want
-    them to know that they are missing something - that's what the demo is
-    about, isn't it?
-
-    And then we hide the message, when support is detected in the browser.
-*/
+/*********************************************
+ * Fallback coucou
+ *********************************************/
 
 .fallback-message {
     font-family: sans-serif;
@@ -137,20 +118,17 @@ a:focus {
     border-radius: 10px;
     background: #EEDC94;
 }
-
 .fallback-message p {
     margin-bottom: 10px;
 }
-
 .impress-supported .fallback-message {
     display: none;
 }
 
-/*
-    Now let's style the presentation steps.
 
-    We start with basics to make sure it displays correctly in everywhere ...
-*/
+/*********************************************
+ * Steps and common classes
+ *********************************************/
 
 .step {
     position: relative;
@@ -167,12 +145,6 @@ a:focus {
     font-size: 48px;
     line-height: 1.5;
 }
-
-/*
-    ... and we enhance the styles for impress.js.
-
-    Basically we remove the margin and make inactive steps a little bit transparent.
-*/
 .impress-enabled .step {
     margin: 0;
     opacity: 0.3;
@@ -183,7 +155,6 @@ a:focus {
     -o-transition:      opacity 1s;
     transition:         opacity 1s;
 }
-
 .impress-enabled .step.active { opacity: 1 }
 
 /*
@@ -219,14 +190,6 @@ a:focus {
     text-align: center;
 }
 
-.slide span {
-    display: block;
-    font-size: 50px;
-    line-height: 72px;
-
-    margin-top: 100px;
-}
-
 .slide .title {
     font-size:70px;
     font-weight:bold;
@@ -236,20 +199,6 @@ a:focus {
     white-space: nowrap;
 }
 
-#author-bros span.title
-{
-    margin-top: 0;
-}
-
-#cleverage
-{
-    padding-left:0;
-}
-
-#test-screen
-{
-    margin-left: -150px;
-}
 
 blockquote {
     background:#f9f9f9;
@@ -274,16 +223,40 @@ blockquote small {
     float: right;
 }
 
-/*
-    And now we start to style each step separately.
+.footnotes {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 40px;
+    font-size: 0.6em;
+    text-align: left;
+    line-height: 1.3em;
+}
 
-    I agree that this may be not the most efficient, object-oriented and
-    scalable way of styling, but most of steps have quite a custom look
-    and typography tricks here and there, so they had to be styles separately.
+h2 {
+    font-size:70px;
+    font-weight:bold;
+    text-align: center;
+    margin: 10px 0 80px 0;
+}
 
-    First is the title step with a big <h1> (no room for padding) and some
-    3D positioning along Z axis.
-*/
+/*********************************************
+ * Specific Steps
+ *********************************************/
+
+#author-bros span.title
+{
+    margin-top: 0;
+}
+
+#cleverage
+{
+    padding-left:0;
+}
+
+#test-screen
+{
+    margin-left: -150px;
+}
 
 #title {
     padding: 0;
@@ -315,46 +288,7 @@ h1 {
     vertical-align: middle;
 }
 
-/*
-    Second step is nothing special, just a text with a link, so it doesn't need
-    any special styling.
-
-    Let's move to 'big thoughts' with centered text and custom font sizes.
-*/
-#big {
-    width: 600px;
-    text-align: center;
-    font-size: 60px;
-    line-height: 1;
-}
-
-#big b {
-    display: block;
-    font-size: 250px;
-    line-height: 250px;
-}
-
-#big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
-}
-
-/*
-    'Tiny ideas' just need some tiny styling.
-*/
-#tiny {
-    width: 500px;
-    text-align: center;
-}
-
-/*
-    This step has some animated text ...
-*/
-#stack-lamp p {
-    font-size: 50px;
-}
-
-#stack-lamp span {
+#stack-lamp span.bump {
     margin-top: 25px;
     display: inline-block;
     opacity: 0.1;
@@ -376,7 +310,7 @@ h1 {
 }
 
 
-#stack-lamp.present span {
+#stack-lamp.present span.bump {
     opacity: 1;
     -moz-opacity: 1;
     filter:alpha(opacity=1);
@@ -399,139 +333,6 @@ h1 {
     -ms-transition-delay:     0.5s;
     -o-transition-delay:      0.5s;
     transition-delay:         0.5s;
-}
-
-/*
-    The 'imagination' step is again some boring font-sizing.
-*/
-
-#imagination {
-    width: 600px;
-}
-
-#imagination .imagination {
-    font-size: 78px;
-}
-
-/*
-    There is nothing really special about 'use the source, Luke' step, too,
-    except maybe of the Yoda background.
-
-    As you can see below I've 'hard-coded' it in data URL.
-    That's not the best way to serve images, but because that's just this one
-    I decided it will be OK to have it this way.
-
-    Just make sure you don't blindly copy this approach.
-*/
-#source {
-    width: 700px;
-    padding-bottom: 300px;
-
-    /* Yoda Icon :: Pixel Art from Star Wars http://www.pixeljoint.com/pixelart/1423.htm */
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAMAAACwUBm+AAAAAXNSR0IArs4c6QAAAKtQTFRFsAAAvbWSLUUrLEQqY1s8UYJMqJ1vNTEgOiIdIzYhjIFVLhsXZ6lgSEIsP2U8JhcCVzMsSXZEgXdOO145XJdWOl03LzAYMk4vSXNExr+hwcuxRTs1Qmk+RW9Am49eFRANQz4pUoNMQWc+OSMDTz0wLBsCNVMxa2NBOyUDUoNNSnlEWo9VRGxAVzYFl6tXCggHbLNmMUIcHhwTXkk5f3VNRT8wUT8xAAAACQocRBWFFwAAAAF0Uk5TAEDm2GYAAAPCSURBVHja7d3JctNAFIZRMwRCCGEmzPM8z/D+T8bu/ptbXXJFdij5fMt2Wuo+2UgqxVmtttq5WVotLzBgwIABAwYMGDCn0qVqbo69psPqVpWx+1XG5iaavF8wYMCAAQMGDBgwi4DJ6Y6qkxB1HNlcN3a92gbR5P2CAQMGDBgwYMCAWSxMlrU+UY5yu2l9okfV4bAxUVbf7TJnAwMGDBgwYMCAAbMLMHeqbGR82Zy+VR1Ht81nVca6R+UdTLaU24Ruzd3qM/e4yjnAgAEDBgwYMGDA7AJMd1l/3NRdVGcj3eX/2WEhCmDGxnM7yqygu8XIPjJj8iN/MGDAgAEDBgwYMAuDGb8q0RGlLCHLv1t9qDKWn3vdNHVuEI6HPaxO9Jo3GDBgwIABAwYMmIXBdC9ShGgMk+XnkXUeuGcsP/e1+lhNnZsL/G5Vs3OAAQMGDBgwYMCAWSxMR3SzOmraG5atdy9wZKzb+vg16qyqe2FltbnAgAEDBgwYMGDALAxmTJSuN3WA76rnVca6GTnemGN1WoEBAwYMGDBgwIBZGMxUomy4+xO899V4LAg5Xnc2MGDAgAEDBgwYMGA218Wq+2K1LDqvY9xZu8zN8fICdM6btYABAwYMGDBgwIABMzfH0+pGU5afze2tXebmeAfVz+p8BQYMGDBgwIABAwbMPBzZ+oWmfJrln1273FhkbHzee9WWbw7AgAEDBgwYMGDALAKm43hcdctKgblcPamOhuXnXlY5Xs6bsW4FGyQCAwYMGDBgwIABswiYMceZKgvMo+h8mrHLTdn676rj+FEFoTtHd8MwOxEYMGDAgAEDBgyYRcBM5UhXqiymW3R3c9ARhWO/OmjqfjVZy+xEYMCAAQMGDBgwYBYG073OnCV0RFNhMhaOa9WfKmOB6XjHMN1tQmaAAQMGDBgwYMCA2VWY7vXjz1U4croAzgPztwIDBgwYMGDAgAEDZhswh035NBw59Dww3RgYMGDAgAEDBgwYMJuD6f4tXT7NUqfCdBvZLkxXdgQGDBgwYMCAAQNmt2DGj8WzwAfV/w7T/aq7mxwwYMCAAQMGDBgwuwqTOo7uTwTngflSzQ3TdaJvAwEDBgwYMGDAgAED5gSvgbyo5oHZ4Pc+gwEDBgwYMGDAgAEzhOm+5G0qTGaAAQMGDBgwYMCAAXNaMOcnls3tNwWm+zRzp54NDBgwYMCAAQMGDJh5YNL36k1TLuGvVq+qnKMbS5n7tulT9asCAwYMGDBgwIABA2ZumKuztLnjgQEDBgwYMGDAgNl5mH/4/ltKA6vBNAAAAABJRU5ErkJggg==);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-}
-
-#source q {
-    font-size: 60px;
-}
-
-/*
-    And the "it's in 3D" step again brings some 3D typography - just for fun.
-
-    Because we want to position <span> elements in 3D we set transform-style to
-    `preserve-3d` on the paragraph.
-    It is not needed by webkit browsers, but it is in Firefox. It's hard to say
-    which behaviour is correct as 3D transforms spec is not very clear about it.
-*/
-#its-in-3d p {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
-    -ms-transform-style:     preserve-3d;
-    -o-transform-style:      preserve-3d;
-    transform-style:         preserve-3d;
-}
-
-/*
-    Below we position each word separately along Z axis and we want it to transition
-    to default position in 0.5s when the step gets `present` class.
-
-    Quite a simple idea, but lot's of styles and prefixes.
-*/
-#its-in-3d span,
-#its-in-3d b {
-    display: inline-block;
-    -webkit-transform: translateZ(40px);
-    -moz-transform:    translateZ(40px);
-    -ms-transform:     translateZ(40px);
-    -o-transform:      translateZ(40px);
-     transform:        translateZ(40px);
-
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
-}
-
-#its-in-3d .have {
-    -webkit-transform: translateZ(-40px);
-    -moz-transform:    translateZ(-40px);
-    -ms-transform:     translateZ(-40px);
-    -o-transform:      translateZ(-40px);
-    transform:         translateZ(-40px);
-}
-
-#its-in-3d .you {
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
-}
-
-#its-in-3d .noticed {
-    -webkit-transform: translateZ(-40px);
-    -moz-transform:    translateZ(-40px);
-    -ms-transform:     translateZ(-40px);
-    -o-transform:      translateZ(-40px);
-    transform:         translateZ(-40px);
-}
-
-#its-in-3d .its {
-    -webkit-transform: translateZ(60px);
-    -moz-transform:    translateZ(60px);
-    -ms-transform:     translateZ(60px);
-    -o-transform:      translateZ(60px);
-    transform:         translateZ(60px);
-}
-
-#its-in-3d .in {
-    -webkit-transform: translateZ(-10px);
-    -moz-transform:    translateZ(-10px);
-    -ms-transform:     translateZ(-10px);
-    -o-transform:      translateZ(-10px);
-    transform:         translateZ(-10px);
-}
-
-#its-in-3d .footnote {
-    font-size: 32px;
-
-    -webkit-transform: translateZ(-10px);
-    -moz-transform:    translateZ(-10px);
-    -ms-transform:     translateZ(-10px);
-    -o-transform:      translateZ(-10px);
-    transform:         translateZ(-10px);
-}
-
-#its-in-3d.present span,
-#its-in-3d.present b {
-    -webkit-transform: translateZ(0px);
-    -moz-transform:    translateZ(0px);
-    -ms-transform:     translateZ(0px);
-    -o-transform:      translateZ(0px);
-    transform:         translateZ(0px);
 }
 
 /*

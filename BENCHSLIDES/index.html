@@ -10,42 +10,29 @@
     <meta name="description" content="Coup de pied dans la LAMP" />
     <meta name="author" content="Damien Alexandre, Benjamin Clay" />
 
-    <!--
-
-        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-        presentation to work.
-
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
-
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
-
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
-
-    -->
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impressive-pony.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body class="impress-not-supported">
-<div class="fallback-message">
-    <p>Your browser <strong>doesn't support the features required</strong> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <strong>Chrome</strong>, <strong>Safari</strong> or <strong>Firefox</strong> browser.</p>
-</div>
 
-<div id="impress">
+    <div class="fallback-message">
+        <p>Your browser <strong>doesn't support the features required</strong> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <strong>Chrome</strong>, <strong>Safari</strong> or <strong>Firefox</strong> browser.</p>
+    </div>
+
+<div id="impress" data-transition-duration="800">
+
     <div id="author-bros" class="step slide" data-x="-2000" data-y="-1500">
-        <span class="title" style="margin-top: 40px">Damien Alexandre</span>
+        <p class="title" style="margin-top: 80px;margin-bottom: 20px">Damien Alexandre</p>
         <img src="img/rainbros.gif" />
-        <span class="title second-title">Benjamin Clay</span>
+        <p class="title">Benjamin Clay</p>
     </div>
 
     <div id="author" class="step slide" data-x="-1000" data-y="-1500">
-        <span class="top title">Damien Alexandre</span>
+        <p style="margin: 50px 0" class="top title">Damien Alexandre</p>
         <p><img src="img/twitter.png" style="vertical-align: bottom;"/> @damienalexandre</p>
         <p>
             Consultant Web - PHP/Symfony/Js/Pony
@@ -53,7 +40,7 @@
             Clever Age
         </p>
 
-        <span class="title">Benjamin Clay</span>
+        <p style="margin: 80px 0 50px 0" class="title">Benjamin Clay</p>
         <p><img src="img/twitter.png"  style="vertical-align: bottom;" /> @ternel</p>
         <p>
             Consultant Web - PHP/Symfony
@@ -69,38 +56,22 @@
     </div>
 
 
-    <!--
-
-        This is an example of step element being scaled.
-
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to it's correct size.
-
-    -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" data-rotate-x="-40" data-rotate-y="10" >
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="5" data-rotate-x="-40" data-rotate-y="10" >
         <span class="try">Coup de pied dans la</span>
         <h1>LAMP <img src="img/forumphp.png" alt="" /></h1>
 
-        <span class="tiny">Ceci n'est pas une conférence sur le cyclimse</span>
+        <small style="font-size: 0.4em">Ceci n'est pas une conférence sur le cyclimse...</small>
     </div>
 
-    <!--
 
-        This element introduces rotation.
-
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-
-    -->
     <div id="perf-def" class="step slide" data-x="850" data-y="3000">
-        <span class="title">Performances</span>
-        <br />
-        <p>Un site excellent qui met trop de temps à s'afficher, c'est un site pourri.</p>
+        <h2>Performances</h2>
+
+        <p style="padding-bottom: 100px;">Un site excellent qui met trop de temps à s'afficher, c'est un site pénalisé.</p>
+
         <p>Attention, il n'existe pas *UNE* configuration de la stack LAMP parfaite</p>
 
-        <img src="img/youdontsay.png" alt="YOU DON'T SAY?" class="right" />
+        <img src="img/youdontsay.png" alt="YOU DON'T SAY?" style="position: absolute;bottom: 0px; right: 0px;" />
     </div>
 
     <!--
@@ -115,31 +86,42 @@
     -->
 
     <div id="pic-1" class="step" data-x="1850" data-y="3000">
-        <img src="img/tweet1.png" alt="Notch" />
+        <img src="img/tweet1.png" alt="Notch" style="width: 100%" />
     </div>
 
 
-    <div id="pic-2" class="step" data-x="2400" data-y="3000">
-        <img src="img/tweet2.png" alt="Notch" />
+    <div id="pic-2" class="step" data-x="2800" data-y="3000">
+        <img src="img/tweet2.png" alt="Notch" style="width: 100%" />
     </div>
 
-     <div id="title-stack-lamp" class="step" data-x="4500" data-y="3000" data-scale="3" data-rotate-x="-40" data-rotate-y="10" >
-        <span class="try">La stack LAMP</h1>
+
+    <div id="title-stack-lamp" class="step" data-x="4500" data-y="3000" data-scale="3" data-rotate-x="-40" data-rotate-y="10" >
+        <h1 style="text-align: center">La stack LAMP</h1>
     </div>
 
 
     <div id="stack-lamp" class="step slide" data-x="3850" data-y="4000">
+
+        <h2>LAMP dans le monde</h2>
+
         <ul>
-            <li><span><strong>L</strong>inux</span> : 85% des serveurs web</li>
-            <li><span><strong>A</strong>pache</span> : 65% des serveurs web</li>
-            <li><span><strong>M</strong>ySQL</span> : 45% des serveurs web</li>
-            <li><span><strong>P</strong>HP</span> : 77% des serveurs web</li>
+            <li><span class="bump"><strong>L</strong>inux</span> : 85% des serveurs web</li>
+            <li><span class="bump"><strong>A</strong>pache</span> : 65% des serveurs web</li>
+            <li><span class="bump"><strong>M</strong>ySQL</span> : 45% des serveurs web</li>
+            <li><span class="bump"><strong>P</strong>HP</span> : 77% des serveurs web</li>
         </ul>
+
+        <p class="footnotes">
+            <a href="http://news.netcraft.com/archives/2012/05/02/may-2012-web-server-survey.html">http://news.netcraft.com/archives/2012/05/02/may-2012-web-server-survey.html</a><br />
+            <a href="http://www.readwriteweb.com/hack/2011/10/mysql-leads-open-source-market.php">http://www.readwriteweb.com/hack/2011/10/mysql-leads-open-source-market.php</a><br />
+            <a href="http://w3techs.com/technologies/history_overview/programming_language">http://w3techs.com/technologies/history_overview/programming_language</a>
+        </p>
     </div>
 
     <div id="server" class="step slide" data-x="2850" data-y="4000">
-        <span class="title">Serveur de test</span>
-        <br />
+
+        <h2>Serveur de test</h2>
+
         <p>Serveur basique (kimsufi OVH), 50€ / mois</p>
         <ul>
             <li>Intel i5 CPU 760 @ <strong>4 x 2.80GHz</strong></li>
@@ -148,13 +130,13 @@
             <li>Connexion 100 Mbps</li>
         </ul>
 
-        <img src="img/notbad.jpg" alt="Not bad!" class="right" />
+        <img src="img/notbad.jpg" alt="Not bad!" style="position: absolute;bottom: 0px; right: 0px;" />
 
     </div>
 
     <div id="test-step" class="step slide" data-x="1850" data-y="4000">
-        <span class="title">Procédure de test</span>
-        <br />
+        <h2>Procédure de test</h2>
+
         <ul>
             <li>Debian <strong>Squeeze</strong> frais <img src="img/squeeze.jpg" alt="" /></li>
             <li><strong>Drupal</strong> - 10 000 contenus générés, sans cache, ni cron</li>
@@ -171,7 +153,8 @@
 
 
     <div id="bench-1-install" class="step slide" data-x="850" data-y="5000" data-rotate-x="-90" >
-        <span class="title">Installation basique</span>
+        <h2>Installation basique</h2>
+
         <ul>
             <li><code>apt-get install <strong>apache2 mysql-server php5</strong> php-pear php5-mysql php5-gd</code></li>
             <li><code>a2enmod rewrite</code></li>
@@ -179,7 +162,8 @@
     </div>
 
     <div id="bench-1-versions" class="step slide" data-x="1850" data-y="5000" data-rotate-x="-90" >
-        <span class="title">Versions</span>
+        <h2>Versions</h2>
+
         <ul>
             <li>PHP : <strong>5.3.3</strong>-7+squeeze9</li>
             <li>MySQL : <strong>5.1</strong>.61-0+squeeze1 sans mysqlnd</li>
@@ -188,7 +172,8 @@
     </div>
 
     <div id="bench-1-results" class="step slide" data-x="2850" data-y="5000" data-rotate-x="-90" >
-        <span class="title">Bench de référence</span>
+        <h2>Bench de référence</h2>
+
         <ul>
             <li>Maximum = <strong>45 req/s</strong></li>
             <li>Temps de réponse = jusqu'à <strong>7 secondes</strong></li>
@@ -201,7 +186,8 @@
     </div>
 
     <div id="htop-details" class="step slide" data-x="1850" data-y="7000" data-rotate-x="-90" >
-        <span class="title">htop</span>
+        <h2>htop</h2>
+
         <p>Doit être inférieur à votre nombre de CPU</p>
         <p>Avec 4 cores, un load au dessus de 3.5 est une "anomalie"</p>
         <p>ou pas.</p>
@@ -231,7 +217,8 @@
     </div>
 
     <div id="php-apc-free-win" class="step slide" data-x="9000" data-y="6000" data-rotate-y="-40" >
-        <span class="title">APC : Cache d'OpCode</span>
+        <h2>APC : Cache d'OpCode</h2>
+
         <p>
             <code>apt-get install php5-apc</code>
             <br />
@@ -285,7 +272,8 @@
     </div>
 
     <div id="dotdeb-versions" class="step slide" data-x="9000" data-y="1000" data-rotate-y="-40" >
-        <span class="title">Versions</span>
+        <h2>Versions</h2>
+
         <ul>
             <li>PHP : <strong>5.3.13</strong>-1+dotdeb.0</li>
             <li>MySQL : <strong>5.5</strong>.24 avec mysqlnd</li>
@@ -305,17 +293,20 @@
     </div>
 
     <div id="mysqltuner" class="step" data-x="7000" data-y="0" data-rotate-y="-40" >
-        <span class="title">MySQLTuner.pl</span>
+        <h2>MySQLTuner.pl</h2>
+
         <img src="img/mysqltuner.png" />
     </div>
 
     <div id="mysqltunerprimer" class="step" data-x="7000" data-y="1000" data-rotate-y="-40" >
-        <span class="title">MySQL Tuning Primer.pl</span>
+        <h2>MySQL Tuning Primer.pl</h2>
+
         <img src="img/tuning-primer.png" />
     </div>
 
     <div id="mysql-config" class="step slide" data-x="7000" data-y="2000" data-rotate-y="-40" >
-        <span class="title">Configuration de MySQL</span>
+        <h2>Configuration de MySQL</h2>
+
         <ul>
             <li>innodb_thread_concurrency = 0</li>
             <li>innodb_buffer_pool_size = 1024M</li>
@@ -327,7 +318,8 @@
     </div>
 
     <div id="apache2-status" class="step slide" data-x="7000" data-y="3000" data-rotate-y="-40" >
-        <span class="title">Apache2 : mod_status</span>
+        <h2>Apache2 : mod_status</h2>
+
         <ul>
             <li>Le nombre de worker en cours / en attente</li>
             <li>Le status complet de chaque worker</li>
@@ -343,7 +335,8 @@
     </div>
 
     <div id="install-status" class="step slide" data-x="7000" data-y="5000" data-rotate-y="-40" >
-        <span class="title">Apache2 : installation de mod_status</span>
+        <h2>Apache2 : installation de mod_status</h2>
+
         <code>
             a2enmod mod_status
             ExtendedStatus On (pour avoir plus d'infos)
@@ -359,7 +352,8 @@
     </div>
 
     <div id="config-a2-php-apc" class="step slide" data-x="6000" data-y="5000" data-rotate-y="-40" >
-        <span class="title">Apache2 / PHP / APC</span>
+        <h2>Apache2 / PHP / APC</h2>
+
         <p>Désactiver les modules inutiles : </p>
         <p>authn_file, authz_default, authz_groupfile, authz_user, autoindex, deflate, negotiation, reqtimeout, setenvif, env, cgi</p>
 
@@ -368,7 +362,8 @@
     </div>
 
     <div id="result-apache2-php-apc" class="step" data-x="5000" data-y="5000" data-rotate-y="-40" >
-        <span class="title">~95req/s - < 5 secondes</span>
+        <h2>~95req/s - < 5 secondes</h2>
+
         <img src="img/best-of-classic-lamp.png" />
     </div>
 
@@ -398,7 +393,8 @@
     </div>
 
     <div id="maria-desc-1" class="step slide" data-x="5000" data-y="6000" data-z="5000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">MariaDB is the new MySQL</span>
+        <h2>MariaDB is the new MySQL</h2>
+
         <ul>
             <li>2008 : Sun achète MySQL (et ça devient bof)</li>
             <li>avril 2009 : Oracle achète Sun</li>
@@ -431,7 +427,8 @@
     </div>
 
     <div id="maria-desc-4" class="step slide" data-x="5000" data-y="6000" data-z="8000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">MariaDB 5.5</span>
+        <h2>MariaDB 5.5</h2>
+
         <ul>
             <li>Threadpool</li>
             <li>Group commit dans le log binaire</li>
@@ -442,7 +439,8 @@
     </div>
 
     <div id="maria-desc-5" class="step slide" data-x="5000" data-y="6000" data-z="9000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Facile à installer</span>
+        <h2>Facile à installer</h2>
+
         <p>Drop-in replacement pour le binaire MySQL.</p>
         <code>
             # MariaDB repository list - created 2012-05-13 14:29 UTC
@@ -458,7 +456,8 @@
     </div>
 
     <div id="maria-threadpool" class="step slide" data-x="5000" data-y="6000" data-z="10000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Le Threadpool</span>
+        <h2>Le Threadpool</h2>
+
         <p>Oracle le propose sous forme de plugin dans la version commerciale de MySQL.</p>
         <code>
             thread_handling=pool-of-threads
@@ -467,7 +466,8 @@
     </div>
 
     <div id="maria-threadpool-2" class="step slide" data-x="5000" data-y="6000" data-z="11000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Le Threadpool</span>
+        <h2>Le Threadpool</h2>
+
         <p>Utilisation de sysbench :</p>
         <code>
             sysbench --test=oltp --oltp-table-size=1G --db-driver=mysql --mysql-host=localhost --mysql-user=root --mysql-password=poney --init-rng=1 --num-threads=256 --max-requests=0 --oltp-read-only --oltp-dist-type=uniform --max-time=180 run
@@ -475,7 +475,8 @@
     </div>
 
     <div id="maria-threadpool-screen" class="step" data-x="3000" data-y="6000" data-z="11000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Le Threadpool</span>
+        <h2>Le Threadpool</h2>
+
         <img src="img/threadpool.png" alt="Threadpool" />
     </div>
 
@@ -485,7 +486,8 @@
 
 
     <div id="nginx-prez" class="step slide" data-x="3000" data-y="6000" data-z="9000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Nginx</span>
+        <h2>Nginx</h2>
+
         <ul>
             <li>Igor Sysoev en 2002</li>
             <li>Documentation en anglais en 2006</li>
@@ -498,7 +500,8 @@
     </div>
 
     <div id="nginx-details" class="step slide" data-x="3000" data-y="6000" data-z="8000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Nginx</span>
+        <h2>Nginx</h2>
+
         <ul>
             <li>Développé pour le fort trafic</li>
             <li>C10K Problem</li>
@@ -509,7 +512,8 @@
     </div>
 
     <div id="php-fpm" class="step slide" data-x="3000" data-y="6000" data-z="7000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">PHP-FPM</span>
+        <h2>PHP-FPM</h2>
+
         <ul>
             <li>FastCGI Process Manager</li>
             <li>Implémentation du FastCGI pour PHP</li>
@@ -519,7 +523,8 @@
     </div>
 
     <div id="install-nginx-php-fpm" class="step slide" data-x="3000" data-y="6000" data-z="6000" data-rotate-y="0" data-rotate-x="90">
-        <span class="title">Nginx et PHP-FPM</span>
+        <h2>Nginx et PHP-FPM</h2>
+
         <code>apt-get install nginx php5-fpm</code>
         <p>Copier/Coller de la conf Drupal sur wiki nginx</p>
 
@@ -565,9 +570,6 @@
         <p>by <b class="positioning">positioning</strong>, <b class="rotating">rotating</strong> and <b class="scaling">scaling</strong> them on an infinite canvas</p>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <strong>limit</strong> is your <b class="imagination">imagination</strong></p>
-    </div>
 
     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
         <p>want to know more?</p>
