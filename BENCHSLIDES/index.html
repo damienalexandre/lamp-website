@@ -104,11 +104,11 @@
 
         <h2>LAMP dans le monde</h2>
 
-        <ul>
-            <li><span class="bump"><strong>L</strong>inux</span> : 85% des serveurs web</li>
-            <li><span class="bump"><strong>A</strong>pache</span> : 65% des serveurs web</li>
-            <li><span class="bump"><strong>M</strong>ySQL</span> : 45% des serveurs web</li>
-            <li><span class="bump"><strong>P</strong>HP</span> : 77% des serveurs web</li>
+        <ul style="font-size: 1.4em;line-height: 2em;">
+            <li><span><strong>L</strong>inux</span> : 85% des serveurs web</li>
+            <li><span><strong>A</strong>pache</span> : 65% des serveurs web</li>
+            <li><span><strong>M</strong>ySQL</span> : 45% des serveurs web</li>
+            <li><span><strong>P</strong>HP</span> : 77% des serveurs web</li>
         </ul>
 
         <p class="footnotes">
@@ -123,7 +123,7 @@
         <h2>Serveur de test</h2>
 
         <p>Serveur basique (kimsufi OVH), 50€ / mois</p>
-        <ul>
+        <ul style="font-size: 1.4em;line-height: 2em;">
             <li>Intel i5 CPU 760 @ <strong>4 x 2.80GHz</strong></li>
             <li><strong>16 Go</strong> de mémoire DDR3</li>
             <li>Disque 1To </li>
@@ -137,7 +137,7 @@
     <div id="test-step" class="step slide" data-x="1850" data-y="4000">
         <h2>Procédure de test</h2>
 
-        <ul>
+        <ul style="font-size: 1.2em;line-height: 1.5em;">
             <li>Debian <strong>Squeeze</strong> frais <img src="img/squeeze.jpg" alt="" /></li>
             <li><strong>Drupal</strong> - 10 000 contenus générés, sans cache, ni cron</li>
             <li>Surf sur le site</li>
@@ -155,7 +155,7 @@
     <div id="bench-1-install" class="step slide" data-x="850" data-y="5000" data-rotate-x="-90" >
         <h2>Installation basique</h2>
 
-        <ul>
+        <ul style="font-size: 1.4em;line-height: 2em;">
             <li><code>apt-get install <strong>apache2 mysql-server php5</strong> php-pear php5-mysql php5-gd</code></li>
             <li><code>a2enmod rewrite</code></li>
         </ul>
@@ -164,40 +164,57 @@
     <div id="bench-1-versions" class="step slide" data-x="1850" data-y="5000" data-rotate-x="-90" >
         <h2>Versions</h2>
 
-        <ul>
+        <ul style="font-size: 1.4em;line-height: 2em;">
             <li>PHP : <strong>5.3.3</strong>-7+squeeze9</li>
             <li>MySQL : <strong>5.1</strong>.61-0+squeeze1 sans mysqlnd</li>
             <li>Apache : <strong>2.2</strong>.16-6+squeeze7</li>
         </ul>
     </div>
 
-    <div id="bench-1-results" class="step slide" data-x="2850" data-y="5000" data-rotate-x="-90" >
+    <div id="bench-1-results" class="step slide" data-x="2850" data-y="5000" data-rotate-x="-90" style="z-index: 1000">
         <h2>Bench de référence</h2>
 
-        <ul>
+        <ul style="font-size: 1.4em;line-height: 2em;">
             <li>Maximum = <strong>45 req/s</strong></li>
             <li>Temps de réponse = jusqu'à <strong>7 secondes</strong></li>
         </ul>
-        <img src="img/fuckin-kiddin.png" alt="Are you kiddin' me?" />
+        <img src="img/fuckin-kiddin.png" alt="Are you kiddin' me?" style="position: absolute; bottom: 0;"/>
     </div>
 
-    <div id="htop" class="step" data-x="2850" data-y="7000" data-rotate-x="-90" >
-        <img src="img/htop.png" alt="htop"/>
+    <div id="htop" class="step" data-x="2850" data-y="3000" data-rotate-x="-90" style="z-index: 999">
+        <img src="img/htop.png" alt="htop" style="width: 100%" />
+    </div>
+
+
+    <div id="htop2" class="step" data-x="2850" data-y="1000" data-rotate-x="-90" style="z-index: 998">
+        <div style="background: black url(img/htop.png) top right no-repeat; height: 600px; background-size: 150%">
+        </div>
     </div>
 
     <div id="htop-details" class="step slide" data-x="1850" data-y="7000" data-rotate-x="-90" >
         <h2>htop</h2>
 
-        <p>Doit être inférieur à votre nombre de CPU</p>
-        <p>Avec 4 cores, un load au dessus de 3.5 est une "anomalie"</p>
-        <p>ou pas.</p>
+        <ul>
+        <li>Doit être inférieur à votre nombre de CPU</li>
+        <li>Avec 4 cores, un load au dessus de 3.5 est une "anomalie"</li>
+        <li>ou pas.</li>
+        </ul>
 
-        <code>
-            1.03        0.22        0.11
-            1min         5min       15min
+        <code><pre>1.03        0.22        0.11
+1min         5min       15min</pre>
         </code>
 
-        <span class="important">Monitorer ses serveurs !</span>
+        <p class="important">Monitorer ses serveurs !</p>
+    </div>
+
+    <div id="htop-monitorer" class="step slide" data-x="2850" data-y="7000" data-rotate-x="-90" >
+        <h2>Comment monitorer ?</h2>
+
+        <ul style="font-size: 1.2em;line-height: 2em;">
+            <li>Monitoring applicatif : Pourquoi et comment ?</li>
+            <li>Salon Honorat à midi</li>
+            <li>Présenté par Kenny DITS</li>
+        </ul>
     </div>
 
     <div id="title-php" class="step" data-x="1800" data-y="7000" data-scale="2" data-rotate-x="0" data-rotate-y="-40" >
