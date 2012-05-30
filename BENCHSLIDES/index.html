@@ -56,7 +56,7 @@
     </div>
 
 
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="5" data-rotate-x="-40" data-rotate-y="10" >
+    <div id="title" class="step" data-x="0" data-y="0" data-rotate-x="-40" data-rotate-y="10" >
         <span class="try">Coup de pied dans la</span>
         <h1>LAMP <img src="img/forumphp.png" alt="" /></h1>
 
@@ -95,7 +95,7 @@
     </div>
 
 
-    <div id="title-stack-lamp" class="step" data-x="4500" data-y="3000" data-scale="3" data-rotate-x="-40" data-rotate-y="10" >
+    <div id="title-stack-lamp" class="step" data-x="4500" data-y="3000" data-rotate-x="-40" data-rotate-y="10" >
         <h1 style="text-align: center">La stack LAMP</h1>
     </div>
 
@@ -217,7 +217,7 @@
         </ul>
     </div>
 
-    <div id="title-php" class="step" data-x="1800" data-y="7000" data-scale="2" data-rotate-x="0" data-rotate-y="-40" >
+    <div id="title-php" class="step" data-x="3800" data-y="7000" data-rotate-x="0" data-rotate-y="0" >
         <img src="img/php.png" alt="PHP" />
     </div>
 
@@ -288,49 +288,52 @@ apt-get update</pre>
     </div>
 
     <div id="dotdeb-install" class="step slide" data-x="9000" data-y="2000" data-rotate-y="-40" >
-        <code>
-            apt-get install apache2 mysql-server php5 php-pear php5-mysql php5-gd php5-apc
-            a2enmod rewrite
-        </code>
-    </div>
+        <h2>Installation basique bis</h2>
 
+        <ul style="font-size: 1.2em;line-height: 1.4em;">
+            <li><code>apt-get install <strong>apache2 mysql-server php5</strong> php-pear php5-mysql php5-gd php5-apc</code></li>
+            <li><code>a2enmod rewrite</code></li>
+        </ul>
+    </div>
+    
     <div id="dotdeb-versions" class="step slide" data-x="9000" data-y="1000" data-rotate-y="-40" >
         <h2>Versions</h2>
 
-        <ul>
+        <ul style="font-size: 1.2em;line-height: 1.4em;">
             <li>PHP : <strong>5.3.13</strong>-1+dotdeb.0</li>
             <li>MySQL : <strong>5.5</strong>.24 avec mysqlnd</li>
             <li>Apache : <strong>2.2</strong>.16 (identique)</li>
         </ul>
 
-        <p>"fonctions avancés du driver MySQL natif pour PHP" à 16:30, Espace Adenauer par Serge Frezefond</p>
+        <p style="padding-top:100px;">"fonctions avancés du driver MySQL natif pour PHP" à 16:30, Espace Adenauer par Serge Frezefond</p>
     </div>
 
     <div id="dotdeb-result" class="step slide" data-x="9000" data-y="0" data-rotate-y="-40" >
-        <p>5 secondes de temps de réponse, et presque 100 req/s</p>
-        <img src="img/chart-dotdeb-apc.png" />
+        <h2>Version dotdeb et APC</h2>
+        <p>5 secondes de temps de réponse,<br/>et presque 100 req/s</p>
+        <img src="img/chart-dotdeb-apc.png" style="margin-top:25px;" />
     </div>
 
     <div id="tuning" class="step" data-x="8000" data-y="0" data-rotate-y="-40" >
-        <img src="img/brace-config.jpg" />
+        <img src="img/brace-config.jpg" style="width:100%" />
     </div>
 
     <div id="mysqltuner" class="step" data-x="7000" data-y="0" data-rotate-y="-40" >
         <h2>MySQLTuner.pl</h2>
 
-        <img src="img/mysqltuner.png" />
+        <img src="img/mysqltuner.png" style="width:100%"  />
     </div>
 
     <div id="mysqltunerprimer" class="step" data-x="7000" data-y="1000" data-rotate-y="-40" >
         <h2>MySQL Tuning Primer</h2>
 
-        <img src="img/tuning-primer.png" />
+        <img src="img/tuning-primer.png" style="width:100%"  />
     </div>
 
     <div id="mysql-config" class="step slide" data-x="7000" data-y="2000" data-rotate-y="-40" >
-        <h2>Configuration de MySQL</h2>
+        <h2>Configurons MySQL</h2>
 
-        <ul>
+        <ul style="font-size: 1.15em;line-height: 1.4em;">
             <li>innodb_thread_concurrency = 0</li>
             <li>innodb_buffer_pool_size = 1024M</li>
             <li>innodb_flush_method = O_DIRECT</li>
@@ -341,9 +344,9 @@ apt-get update</pre>
     </div>
 
     <div id="apache2-status" class="step slide" data-x="7000" data-y="3000" data-rotate-y="-40" >
-        <h2>Apache2 : mod_status</h2>
+        <h2>Apache2 mod_status</h2>
 
-        <ul>
+        <ul style="font-size: 1.1em;line-height: 1.2em;">
             <li>Le nombre de worker en cours / en attente</li>
             <li>Le status complet de chaque worker</li>
             <li>Le uptime du serveur</li>
@@ -354,40 +357,41 @@ apt-get update</pre>
     </div>
 
     <div id="apache2-status-screen" class="step" data-x="7000" data-y="4000" data-rotate-y="-40" >
-        <img src="img/apache-status.png" />
+        <img src="img/apache-status.png" style="width:100%" />
     </div>
 
     <div id="install-status" class="step slide" data-x="7000" data-y="5000" data-rotate-y="-40" >
-        <h2>Apache2 : installation de mod_status</h2>
+        <h2>Installer mod_status</h2>
 
-        <code>
-            a2enmod mod_status
-            ExtendedStatus On (pour avoir plus d'infos)
+<code>a2enmod mod_status</code>
+        <code style="font-size:0.8em"><pre>
+ExtendedStatus On
 
-            &lgt;Location /server-status&rgt;
-                SetHandler server-status
+&lt;Location /server-status&gt;
+    SetHandler server-status
 
-                Order Deny,Allow
-                Deny from all
-                Allow from .pony.com
-            &lgt;/Location&rgt;
+    Order Deny,Allow
+    Deny from all
+    Allow from .pony.com
+&lt;/Location&gt;</pre>
         </code>
     </div>
 
     <div id="config-a2-php-apc" class="step slide" data-x="6000" data-y="5000" data-rotate-y="-40" >
-        <h2>Apache2 / PHP / APC</h2>
-
-        <p>Désactiver les modules inutiles : </p>
-        <p>authn_file, authz_default, authz_groupfile, authz_user, autoindex, deflate, negotiation, reqtimeout, setenvif, env, cgi</p>
-
-        <p> MaxClient de 150 à 250</p>
-        <p>apc.stat = 0</p>
+        <h2 style="margin-bottom:50px">Tuner Apache</h2>
+        <ul>
+        <li>Désactiver les modules inutiles :
+        <code>a2dismod authn_file authz_default authz_groupfile authz_user autoindex deflate negotiation reqtimeout setenvif env cgi</code>
+</li>
+        <li>MaxClient de 150 à 250</li>
+        <li><code>apc.stat = 0</code></li>
+        </ul>
     </div>
 
     <div id="result-apache2-php-apc" class="step" data-x="5000" data-y="5000" data-rotate-y="-40" >
         <h2>~95req/s - < 5 secondes</h2>
 
-        <img src="img/best-of-classic-lamp.png" />
+        <img src="img/best-of-classic-lamp.png" style="width:100%" />
     </div>
 
     <div id="coup-de-pied" class="step" data-x="5000" data-y="6000" data-rotate-y="0" data-rotate-x="90">
@@ -395,10 +399,10 @@ apt-get update</pre>
     </div>
 
     <div id="coup-de-pied-2" class="step" data-x="5000" data-y="6000" data-z="1000" data-rotate-y="0" data-rotate-x="90">
-        <p>Apache => Ngnix</p>
-        <p>MySQL => MariaDB</p>
-        <p>Linux => Windows</p>
-        <p>PHP   => PERL</p>
+        <h2>Apache => Ngnix</h2>
+        <h2>MySQL => MariaDB</h2>
+        <h2>Linux => Windows</h2>
+        <h2>PHP   => PERL</h2>
     </div>
 
     <div id="coup-de-pied-troll" class="step" data-x="5000" data-y="6000" data-z="2000" data-rotate-y="0" data-rotate-x="90">
