@@ -104,7 +104,7 @@
 
         <h2>LAMP dans le monde</h2>
 
-        <ul style="font-size: 1.4em;line-height: 2em;">
+        <ul style="font-size: 1.2em;line-height: 1.4em;">
             <li><span><strong>L</strong>inux</span> : 85% des serveurs web</li>
             <li><span><strong>A</strong>pache</span> : 65% des serveurs web</li>
             <li><span><strong>M</strong>ySQL</span> : 45% des serveurs web</li>
@@ -123,7 +123,7 @@
         <h2>Serveur de test</h2>
 
         <p>Serveur basique (kimsufi OVH), 50€ / mois</p>
-        <ul style="font-size: 1.4em;line-height: 2em;">
+        <ul style="font-size: 1.2em;line-height: 1.4em;">
             <li>Intel i5 CPU 760 @ <strong>4 x 2.80GHz</strong></li>
             <li><strong>16 Go</strong> de mémoire DDR3</li>
             <li>Disque 1To </li>
@@ -137,7 +137,7 @@
     <div id="test-step" class="step slide" data-x="1850" data-y="4000">
         <h2>Procédure de test</h2>
 
-        <ul style="font-size: 1.2em;line-height: 1.5em;">
+        <ul style="font-size: 1em;line-height: 1.4em;">
             <li>Debian <strong>Squeeze</strong> frais <img src="img/squeeze.jpg" alt="" /></li>
             <li><strong>Drupal</strong> - 10 000 contenus générés, sans cache, ni cron</li>
             <li>Surf sur le site</li>
@@ -155,7 +155,7 @@
     <div id="bench-1-install" class="step slide" data-x="850" data-y="5000" data-rotate-x="-90" >
         <h2>Installation basique</h2>
 
-        <ul style="font-size: 1.4em;line-height: 2em;">
+        <ul style="font-size: 1.2em;line-height: 1.4em;">
             <li><code>apt-get install <strong>apache2 mysql-server php5</strong> php-pear php5-mysql php5-gd</code></li>
             <li><code>a2enmod rewrite</code></li>
         </ul>
@@ -181,12 +181,12 @@
         <img src="img/fuckin-kiddin.png" alt="Are you kiddin' me?" style="position: absolute; bottom: 0;"/>
     </div>
 
-    <div id="htop" class="step" data-x="2850" data-y="3000" data-rotate-x="-90" style="z-index: 999">
+    <div id="htop" class="step" data-x="3850" data-y="5000" data-rotate-x="-90">
         <img src="img/htop.png" alt="htop" style="width: 100%" />
     </div>
 
 
-    <div id="htop2" class="step" data-x="2850" data-y="1000" data-rotate-x="-90" style="z-index: 998">
+    <div id="htop2" class="step" data-x="3850" data-y="6000" data-rotate-x="-90">
         <div style="background: black url(img/htop.png) top right no-repeat; height: 600px; background-size: 150%">
         </div>
     </div>
@@ -212,7 +212,7 @@
 
         <ul style="font-size: 1.2em;line-height: 2em;">
             <li>Monitoring applicatif : Pourquoi et comment ?</li>
-            <li>Salon Honorat à midi</li>
+            <li><strong>Salon Honorat à midi</strong></li>
             <li>Présenté par Kenny DITS</li>
         </ul>
     </div>
@@ -243,7 +243,7 @@
             <br />
             <strong>FREE WIN</strong>
         </p>
-        <img src="img/fuckyeah.png" alt="FUCK YEAH!" class="right" />
+        <img src="img/fuckyeah.png" alt="FUCK YEAH!" style="width: 40%; position: absolute; bottom: 0;left: 0;" />
     </div>
 
     <div id="apc-quote" class="step" data-x="9000" data-y="5000" data-rotate-y="-40" >
@@ -257,8 +257,10 @@
 
 
     <div id="dotdeb-prez" class="step slide" data-x="9000" data-y="4000" data-rotate-y="-40" >
-        <p>Dotdeb, maintenu par Guillaume Plessis</p>
-        <ul>
+        <h2>Dotdeb</h2>
+
+        <p>♥ by Guillaume Plessis ♥</p>
+        <ul style="font-size: 1.2em;line-height: 1.4em;">
             <li>PHP 5.4 et 5.3 + extensions</li>
             <li>MySQL 5.5 and 5.1</li>
             <li>Percona toolkit</li>
@@ -266,18 +268,22 @@
         </ul>
 
         <p>Sur Debian 6.0 pour amd64 et i386.</p>
-        <p>Protip® : Laissez la compilations à ceux dont c'est le métier.</p>
+        <p class="important">Protip® : Laissez la compilations à ceux dont c'est le métier.</p>
     </div>
 
     <div id="dotdeb-conf" class="step slide" data-x="9000" data-y="3000" data-rotate-y="-40" >
+
+        <h2>Installation</h2>
         <p>/etc/apt/sources.list</p>
-        <code>
-            /etc/apt/sources.list :
-            deb http://packages.dotdeb.org squeeze all
-            deb-src http://packages.dotdeb.org squeeze all
-            wget http://www.dotdeb.org/dotdeb.gpg
-            cat dotdeb.gpg | sudo apt-key add -
-            apt-get update
+
+        <code style="font-size: 0.65em"><pre>
+deb http://packages.dotdeb.org squeeze all
+deb-src http://packages.dotdeb.org squeeze all</pre></code>
+
+
+<code style="font-size: 0.85em"><pre>wget http://www.dotdeb.org/dotdeb.gpg
+cat dotdeb.gpg | sudo apt-key add -
+apt-get update</pre>
         </code>
     </div>
 
