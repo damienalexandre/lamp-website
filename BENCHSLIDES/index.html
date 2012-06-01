@@ -499,7 +499,7 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
         <h2>Sysbencher Threadpool</h2>
 
         <p>Utilisation de sysbench :</p>
-        <code  style="font-size: 0.8em;line-height: 1em;">
+        <code style="font-size: 0.8em;line-height: 1em;">
             sysbench --test=oltp --oltp-table-size=<strong>1G</strong> --db-driver=mysql --mysql-host=localhost
             --mysql-user=root --mysql-password=poney --init-rng=1 <strong>--num-threads=256</strong> --max-requests=0
             --oltp-read-only --oltp-dist-type=uniform --max-time=180 run
@@ -512,15 +512,17 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
         <img src="img/threadpool.png" alt="Threadpool" style="width:100%" />
     </div>
 
-    <div id="nginx" class="step" data-x="3000" data-y="6000" data-z="10000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <img src="img/nginx-logo.png" alt="NGINX" />
+    <div id="nginx" class="step slide" data-x="3000" data-y="6000" data-z="10000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
+        <img src="img/nginx-logo.png" alt="NGINX" style="margin-top:150px; width: 100%" />
+
+        <p class="footnotes">Ou captain NGINX pour les intimes.</p>
     </div>
 
 
     <div id="nginx-prez" class="step slide" data-x="3000" data-y="6000" data-z="9000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>Nginx</h2>
+        <h2>The Nginx story</h2>
 
-        <ul>
+        <ul style="font-size: 1.15em;line-height: 1.3em;">
             <li>Igor Sysoev en 2002</li>
             <li>Documentation en anglais en 2006</li>
             <li>Explosion en 2008</li>
@@ -528,13 +530,13 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
             <li>Nginx HQ @ SF en 2011</li>
 
         </ul>
-        <img src="img/absolut_nginx.jpg" alt="Absolut Nginx" />
+        <img src="img/absolut_nginx.jpg" alt="Absolut Nginx" style="position: absolute; top:350px; right: 50px;" />
     </div>
 
     <div id="nginx-details" class="step slide" data-x="3000" data-y="6000" data-z="8000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Nginx</h2>
 
-        <ul>
+        <ul style="font-size: 1.3em;line-height: 1.3em;">
             <li>Développé pour le fort trafic</li>
             <li>C10K Problem</li>
             <li>Noyau minimal, beaucoup de modules</li>
@@ -544,9 +546,9 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
     </div>
 
     <div id="php-fpm" class="step slide" data-x="3000" data-y="6000" data-z="7000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>PHP-FPM</h2>
+        <h2>Avec PHP-FPM</h2>
 
-        <ul>
+        <ul style="font-size: 1.3em;line-height: 1.3em;">
             <li>FastCGI Process Manager</li>
             <li>Implémentation du FastCGI pour PHP</li>
             <li>Plusieurs pools de PHP avec configuration</li>
@@ -557,47 +559,57 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
     <div id="install-nginx-php-fpm" class="step slide" data-x="3000" data-y="6000" data-z="6000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Nginx et PHP-FPM</h2>
 
-        <code>apt-get install nginx php5-fpm</code>
-        <p>Copier/Coller de la conf Drupal sur wiki nginx</p>
+        <code style="font-size: 0.9em;">apt-get install nginx php5-fpm</code>
 
-        <img src="img/thatsall.gif" />
+        <p>Copier/Coller de la configuration "Drupal" depuis le wiki nginx.</p>
+
+        <img src="img/thatsall.gif" style="position: absolute; bottom: 20px;left: 50%; margin-left: -174px;" />
     </div>
 
     <div id="chart-nginx-php-fpm" class="step" data-x="3000" data-y="6000" data-z="5000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Nginx et PHP-FPM</h2>
-        <img src="img/chart-nginx-mariadb.png" />
+        <img src="img/chart-nginx-mariadb.png" style="width: 100%" />
     </div>
 
     <div id="chart-versus" class="step" data-x="3000" data-y="6000" data-z="4000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Nginx et PHP-FPM</h2>
-        <img src="img/chart_apachemysql_vs_ngnixmaria.png" />
+        <img src="img/chart_apachemysql_vs_ngnixmaria.png" style="width: 100%" />
     </div>
 
     <div id="cherokee" class="step slide" data-x="3000" data-y="6000" data-z="3000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <img src="img/cherokee-logo.png" />
-        <ul>
+        <ul style="font-size: 1.1em;line-height: 1.1em;">
             <li>FastCGI / SSL / VirtualHost / ...</li>
-            <li>Configuration simple</li>
+            <li>Configuration simple
+            <ul>
+                <li>Symfony</li>
+                <li>RoR</li>
+                <li>Django</li>
+                <li>Liferay</li>
+                <li>Glassfish</li>
+                <li>SugarCRM</li>
+                <li>phpBB...</li>
+            </ul>
+            </li>
         </ul>
-        <p>Symfony, RoR, Django, Liferay, Glassfish, SugarCRM, phpBB, ...</p>
+        <p></p>
     </div>
 
     <div id="cherokee-1" class="step" data-x="3000" data-y="6000" data-z="2000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <img src="img/cherokee-1.png" />
+        <img src="img/cherokee-1.png" style="width: 100%"  />
     </div>
 
     <div id="cherokee-2" class="step" data-x="3000" data-y="6000" data-z="1000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <img src="img/cherokee-2.png" />
+        <img src="img/cherokee-2.png" style="width: 100%"  />
     </div>
 
     <div id="cherokee-3" class="step" data-x="1000" data-y="6000" data-z="1000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <img src="img/cherokee-3.png" />
+        <img src="img/cherokee-3.png"  style="width: 100%"  />
     </div>
 
     <div id="percona" class="step slide" data-x="1000" data-y="6000" data-z="2000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>Percona Server with XtraDB</h2>
-        <img src="img/percona.jpg" />
-        <ul>
+        <img src="img/percona.jpg" style="width: 400px" />
+        <ul style="font-size: 1.3em;line-height: 1.3em;">
             <li>Fondé par Peter Zaitsev (expert badass)</li>
             <li>Build de MySQL patché</li>
             <li>XtraDB = InnoDb en mieux (utilisé dans MariaDB)</li>
@@ -605,9 +617,8 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
     </div>
 
     <div id="drizzle" class="step slide" data-x="1000" data-y="6000" data-z="3000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>Drizzle</h2>
-        <img src="img/drizzle.png" />
-        <ul>
+        <img src="img/drizzle.png" style="width: 500px;" />
+        <ul style="font-size: 1.3em;line-height: 1.3em;">
             <li>Fondé par Brian Aker</li>
             <li>Forké de MySQL 6, allégé, passé en C++</li>
             <li>Se concentre sur la scalabilité</li>
@@ -616,60 +627,61 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
 
     <div id="php-5-4" class="step slide" data-x="1000" data-y="6000" data-z="4000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Et PHP 5.4 ?</h2>
-        <p>Suivre les mises à jours de PHP c'est aussi bénéficier d'améliorations de performance.</p>
+        <p>Suivre les mises à jours de PHP <strong>c'est aussi bénéficier</strong> d'améliorations de performance.</p>
 
-        <p>Et au fait, PHP 5.3 a trois ans.</p>
+        <h2>PHP 5.3 a trois ans.</h2>
     </div>
 
     <div id="php-5-h1n1" class="step" data-x="1000" data-y="6000" data-z="5000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <img src="img/h1n1.jpeg" />
+        <img src="img/h1n1.jpeg"  style="width: 100%" />
     </div>
 
     <div id="php-5-mj" class="step" data-x="1000" data-y="6000" data-z="6000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <img src="img/mj.gif" />
-        <p class="tiny">IMPORTANT : Il existe un site dédié aux gifs de MJ.</p>
+        <img src="img/mj.gif"  style="width: 90%; margin-bottom: 30px" />
+        <p class="footnotes">IMPORTANT : Il existe un site dédié aux gifs de MJ.</p>
     </div>
 
     <div id="install-php-5-4" class="step slide" data-x="1000" data-y="6000" data-z="7000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Installer PHP5.4</h2>
         <p>Merci Dotdeb !</p>
-        <code>
-            deb http://packages.dotdeb.org squeeze-php54 all
+        <code style="font-size: 0.5em">
+            deb http://packages.dotdeb.org squeeze-php54 all<br />
             deb-src http://packages.dotdeb.org squeeze-php54 all
         </code>
-        <p>Très peu d'incompatibilités mais APC en beta.</p>
+
+        <p>Très peu d'incompatibilités<br />mais APC en beta.</p>
     </div>
 
-    <div id="chart-php-5-4" class="step slide" data-x="1000" data-y="6000" data-z="8000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
+    <div id="chart-php-5-4" class="step" data-x="1000" data-y="6000" data-z="8000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>PHP 5.4 == FREE WIN</h2>
-        <img src="img/chart-php54.png" />
+        <img src="img/chart-php54.png" style="width: 100%"/>
     </div>
 
     <div id="apache-2-4" class="step slide" data-x="1000" data-y="6000" data-z="9000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Apache 2.4</h2>
-        <ul>
+        <ul style="font-size: 1.2em;line-height: 1.2em;">
+            <li>7 ans d'attente !</li>
             <li>Consommation mémoire réduite</li>
-            <li>Une amélioration générale des performances</li>
-            <li>Le "MPM Event" supporté</li>
+            <li>Amélioration générale des performances</li>
+            <li>Le "MPM Event" stable</li>
             <li>Lectures/écritures asynchrones des MPM</li>
-            <li>NameVirtualHost est maintenant obsolète</li>
         </ul>
     </div>
 
     <div id="apache-2-4-compil" class="step slide" data-x="-1000" data-y="6000" data-z="9000" data-rotate-y="-90" data-rotate-x="0">
-        <h2>Pas d'installation simple, on compile !</h2>
+        <h2 style="line-height: 1.5em">Pas d'installation simple, on compile !</h2>
         <img src="img/snif.png" />
     </div>
 
     <div id="apache-2-4-bench" class="step slide" data-x="-1000" data-y="6000" data-z="8000" data-rotate-y="-90" data-rotate-x="0">
         <h2>Pinaaaaageeeeeeeee</h2>
-        <p>©HeroCorp</p>
         <p>+ de 100 req/s, 3 secondes</p>
+        <p class="footnotes">©HeroCorp</p>
     </div>
 
     <div id="spdy-1" class="step" data-z="-1000" data-y="6000" data-x="7000" data-rotate-y="-90" data-rotate-x="0">
-        <p>Et si on virait HTTP ?</p>
-        <img src="img/speedy.jpg" />
+        <h2>Et si on virait HTTP ?</h2>
+        <img src="img/speedy.jpg" style="width: 100%" />
     </div>
 
     <div id="spdy-2" class="step slide" data-z="-1000" data-y="6000" data-x="6000" data-rotate-y="-90" data-rotate-x="0">
