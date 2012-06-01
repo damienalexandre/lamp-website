@@ -420,17 +420,18 @@ ExtendedStatus On
     </div>
 
     <div id="maria-desc-1" class="step slide" data-x="5000" data-y="6000" data-z="5000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>MariaDB the new MySQL</h2>
+        <h2>Qu'est ce que MariaDB</h2>
 
-        <ul>
-            <li>2008 : Sun achète MySQL (et ça devient bof)</li>
+        <ul style="font-size: 1.1em;line-height: 1.2em;">
+            <li>2008 : Sun achète MySQL (bouh)</li>
             <li>avril 2009 : Oracle achète Sun</li>
             <li>mai 2009 : Monty Widenius, créateur de MySQL, démissionne et crée <strong>The Monty Program</strong>. Sa nouvelle société crée un fork nommé MariaDB</li>
         </ul>
     </div>
 
     <div id="maria-desc-2" class="step slide" data-x="5000" data-y="6000" data-z="6000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <ul>
+        <h2>I ♥ MariaDB</h2>
+        <ul style="font-size: 1.1em;line-height: 1.2em;">
             <li>Vraiment opensource (MySQL contient des features réservés aux entreprises)</li>
             <li>Est et restera sous licence GPL (v2)</li>
             <li>100% compatible avec MySQL</li>
@@ -440,7 +441,8 @@ ExtendedStatus On
     </div>
 
     <div id="maria-desc-3" class="step slide" data-x="5000" data-y="6000" data-z="7000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <ul>
+        <h2>They ♥ MariaDB</h2>
+        <ul style="font-size: 1.1em;line-height: 1.2em;">
             <li>Déjà utilisé chez PAP, Paybox, OLX, Jelastic...</li>
             <li>Support disponible</li>
                 <ul>
@@ -456,7 +458,7 @@ ExtendedStatus On
     <div id="maria-desc-4" class="step slide" data-x="5000" data-y="6000" data-z="8000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>MariaDB 5.5</h2>
 
-        <ul>
+        <ul style="font-size: 1.3em;line-height: 1.3em;">
             <li>Threadpool</li>
             <li>Group commit dans le log binaire</li>
             <li>Lib client non bloquante</li>
@@ -468,15 +470,15 @@ ExtendedStatus On
     <div id="maria-desc-5" class="step slide" data-x="5000" data-y="6000" data-z="9000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Facile à installer</h2>
 
-        <p>Drop-in replacement pour le binaire MySQL.</p>
-        <code>
-            # MariaDB repository list - created 2012-05-13 14:29 UTC
-            # http://downloads.mariadb.org/mariadb/repositories/
-            deb http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main
-            deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main
+        <p>Drop-in replacement du binaire MySQL.</p>
+        <code  style="font-size: 0.4em;line-height: 1em;"><pre>
+# MariaDB repository list
+# http://downloads.mariadb.org/mariadb/repositories/
+deb http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main
+deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre></code>
 
-            apt-get update
-            apt-get install mariadb-server-5.5
+        <code>
+            apt-get update<br />apt-get install mariadb-server-5.5
         </code>
 
         <p>Ne pas oublier d'exclure dotdeb du sources.list</p>
@@ -485,26 +487,29 @@ ExtendedStatus On
     <div id="maria-threadpool" class="step slide" data-x="5000" data-y="6000" data-z="10000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
         <h2>Le Threadpool</h2>
 
-        <p>Oracle le propose sous forme de plugin dans la version commerciale de MySQL.</p>
-        <code>
+        <p>Proposé chez Oracle sous forme de plugin dans la version commerciale de MySQL.</p>
+
+        <code  style="font-size: 0.9em;">
             thread_handling=pool-of-threads
         </code>
-        <p>La licence de MySQL Entreprise n'autorise pas la diffusion de benchmark comparatif sans l'accord écrit d'Oracle.</p>
+        <p class="footnotes">La licence de MySQL Entreprise n'autorise pas la diffusion de benchmark comparatif sans l'accord écrit d'Oracle.</p>
     </div>
 
     <div id="maria-threadpool-2" class="step slide" data-x="5000" data-y="6000" data-z="11000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>Le Threadpool</h2>
+        <h2>Sysbencher Threadpool</h2>
 
         <p>Utilisation de sysbench :</p>
-        <code>
-            sysbench --test=oltp --oltp-table-size=1G --db-driver=mysql --mysql-host=localhost --mysql-user=root --mysql-password=poney --init-rng=1 --num-threads=256 --max-requests=0 --oltp-read-only --oltp-dist-type=uniform --max-time=180 run
+        <code  style="font-size: 0.8em;line-height: 1em;">
+            sysbench --test=oltp --oltp-table-size=<strong>1G</strong> --db-driver=mysql --mysql-host=localhost
+            --mysql-user=root --mysql-password=poney --init-rng=1 <strong>--num-threads=256</strong> --max-requests=0
+            --oltp-read-only --oltp-dist-type=uniform --max-time=180 run
         </code>
     </div>
 
     <div id="maria-threadpool-screen" class="step" data-x="3000" data-y="6000" data-z="11000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
-        <h2>Le Threadpool</h2>
+        <h2>Le Threadpool ça rox</h2>
 
-        <img src="img/threadpool.png" alt="Threadpool" />
+        <img src="img/threadpool.png" alt="Threadpool" style="width:100%" />
     </div>
 
     <div id="nginx" class="step" data-x="3000" data-y="6000" data-z="10000" data-rotate-y="-90" data-rotate-x="0" data-rotate-z="0">
