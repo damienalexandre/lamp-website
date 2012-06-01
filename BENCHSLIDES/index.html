@@ -687,52 +687,54 @@ deb-src http://mirror.switch.ch/mirror/mariadb/repo/5.5/debian squeeze main</pre
     <div id="spdy-2" class="step slide" data-z="-1000" data-y="6000" data-x="6000" data-rotate-y="-90" data-rotate-x="0">
         <h2>Spdy</h2>
         <ul>
-            <li>une seule connexion pour toutes les ressources d'une page web</li>
             <li>SSL</li>
             <li>gzip/DEFLATE by design (pour les headers aussi)</li>
+            <li>une seule connexion pour toutes les ressources d'une page web</li>
             <li>Candidat pour HTTP 2.0</li>
         </ul>
-        <p>Utilisé par Google, Wikipedia, Twitter, HumbleBundle...</p>
+        <p style="margin-top: 100px">Utilisé par Google, Wikipedia, Twitter, HumbleBundle...</p>
     </div>
 
     <div id="spdy-install" class="step slide" data-z="-1000" data-y="6000" data-x="5000" data-rotate-y="-90" data-rotate-x="0">
         <h2>Installation simple !</h2>
         <ul>
-            <li>dpkg -i mod-spdy-*.deb</li>
+            <li><code>dpkg -i mod-spdy-*.deb</code></li>
             <li>Génération d'un certificat SSL</li>
         </ul>
 
-        <p>WIIIIINNNNN</p>
-        <img src="img/rudy.gif" />
+        <img src="img/rudy.gif" style="position: absolute; left:250px; bottom: 20px;" />
     </div>
 
     <div id="spdy-compare" class="step" data-z="-1000" data-y="6000" data-x="4000" data-rotate-y="-90" data-rotate-x="0">
-        <h2></h2>
-        <img src="img/speedy-comp.png" />
+        <img src="img/speedy-comp.png" style="width: 100%"/>
     </div>
 
     <div id="error" class="step slide" data-z="-1000" data-y="6000" data-x="3000" data-rotate-y="-90" data-rotate-x="0">
-        <h2>Nos fails :</h2>
+        <h2>Nos FAILS</h2>
         <ul>
             <li>Intervertir les données des benchs</li>
-            <li>Avoir la base de donnée sur le serveur PHP</li>
+            <li>Avoir la BDD sur le serveur PHP</li>
             <li>Augmenter le MaxClient / max_connexion "tant que ça casse pas"</li>
             <li>Utiliser MySQL pour la recherche</li>
-            <li>Utiliser Drupal :trollface:</li>
+            <li>Utiliser Drupal</li>
         </ul>
-        <img src="img/trololo.gif" />
+        <img src="img/trololo.gif" style="width: 350px" />
     </div>
 
     <div id="merci" class="step slide" data-z="-1000" data-y="6000" data-x="2000" data-rotate-y="-90" data-rotate-x="0">
-        <h2>Merci !</h2>
-        <p>Code source, outils de bench et slides sur :<br/>
-        https://github.com/damienalexandre/lamp-website</p>
+        <h2 style="font-size: 3em">Merci !</h2>
+
+        <p style="margin-top: 180px; ">Code source, outils de bench et slides sur :<br/>
+        <a href="https://github.com/damienalexandre/lamp-website">github.com/<br/>damienalexandre/lamp-website</a></p>
     </div>
 
     <div id="question" class="step slide" data-z="-1000" data-y="6000" data-x="1000" data-rotate-y="-90" data-rotate-x="0">
         <h2>Questions ?</h2>
         <img src="img/question.png" />
         <p>De gros chocobisoux à mateo pour l'aide, et pour le serveur de Siege.</p>
+        <p>Perrine pour sa patience.</p>
+        <p>Impress.JS pour nos slides.</p>
+        <p>Mr. Gif animé pour son invention.</p>
     </div>
 
 </div>
