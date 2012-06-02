@@ -516,9 +516,9 @@ h1 {
   thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
+  @page { margin: 0.1cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+  h2, h3 { page-break-after: avoid; margin: 0!important; }
 
 
   .fallback-message { display: none; }
@@ -532,6 +532,6 @@ h1 {
   #test-screen iframe { height: 100%!important; }
 
   #mysqltuner img, #mysqltunerprimer img, #tuning img {
-      height: 500px!important; width: auto!important;
+      height: 450px!important; width: auto!important;
   }
 }

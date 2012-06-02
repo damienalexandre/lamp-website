@@ -15,7 +15,8 @@ navigateurs sans support de la 3D CSS.
 
 Si le rendu est impossible dans votre navigateur, vous pouvez consulter la présentation en désactivant Javascript.
 
-Une version PDF est aussi disponible dans les téléchargements - mais c'est moins classe.
+Une [version PDF est aussi disponible](https://github.com/downloads/damienalexandre/lamp-website/coup-de-pied-dans-la-lamp-v0.1.pdf)
+dans les téléchargements - mais c'est moins classe.
 
 Reproduire les benchs
 ---------------------
