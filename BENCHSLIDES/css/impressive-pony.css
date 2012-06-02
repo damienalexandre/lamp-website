@@ -500,3 +500,38 @@ h1 {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+
+
+  .fallback-message { display: none; }
+  @page land {size: landscape;}
+  .step { page-break-inside: avoid; page-break-after: always; border: none; margin-top: 100px; }
+  .step img { max-height: 100%; }
+
+  #htop2 { display: none }
+  #title .try { top: 200px }
+  #title { padding-top: 250px }
+  #test-screen iframe { height: 100%!important; }
+
+  #mysqltuner img, #mysqltunerprimer img, #tuning img {
+      height: 500px!important; width: auto!important;
+  }
+}
