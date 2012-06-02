@@ -1,6 +1,11 @@
 Coup de pied dans la LAMP
 =========================
 
+Wut?
+----
+
+Ceci est le contenu d'une présentation donnée à l'occasion du Forum PHP 2012 à Paris.
+
 Consulter la présentation
 -------------------------
 
@@ -32,11 +37,12 @@ représentatif de votre traffic).
 Auteurs
 -------
 
-Benjamin Clay - @ternel
-Damien Alexandre - @damienalexandre
-
+- Benjamin Clay - @ternel
+- Damien Alexandre - @damienalexandre
 
 Licence
 -------
 
 L'ensemble des contenus de ce dépot sont sous Licence BEERWARE (voir `LICENSE`).
+
+![That's all](https://github.com/damienalexandre/lamp-website/raw/master/Slideshow/img/thatsall.gif)
