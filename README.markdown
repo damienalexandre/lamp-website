@@ -13,9 +13,9 @@ La présentation se trouve dans le dossier `Slideshow`,
 elle est au format [Impress.js](https://github.com/bartaz/impress.js) et n'est donc pas compatible avec les
 navigateurs sans support de la 3D CSS.
 
-Vous pouvez consulter la présentation en ligne à l'adresse suivante [ternel.net/forumphp](http://ternel.net/forumphp).
+Vous pouvez consulter la présentation en ligne à l'adresse suivante [http://damienalexandre.github.io/lamp-website/Slideshow](http://damienalexandre.github.io/lamp-website/Slideshow).
 
-Si le rendu est impossible dans votre navigateur, vous pouvez consulter la présentation en désactivant Javascript - elle se 
+Si le rendu est impossible dans votre navigateur, vous pouvez consulter la présentation en désactivant Javascript - elle se
 présentera alors comme un document HTML classique.
 
 Une [version PDF est aussi disponible](https://github.com/downloads/damienalexandre/lamp-website/coup-de-pied-dans-la-lamp-v0.1.pdf)
